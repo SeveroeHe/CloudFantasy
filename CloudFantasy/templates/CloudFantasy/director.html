@@ -8,12 +8,12 @@ Home | CloudFantasy
 {% block stylesheet%}
 {% load staticfiles %}
 	<link type="text/css" rel="stylesheet" href="{% static 'CloudFantasy/css/director.css' %}">
-
+	<script src="{% static 'CloudFantasy/js/scroll.js' %}"></script>
 {% endblock%}
 
 {% block content%}
 <div id="biography">
-	<div class="banding">
+	<div class="banding" id="bio">
 		<p>A fantasist in</p>
 		<p>the truest sense</p>
 	</div>
@@ -50,18 +50,24 @@ Home | CloudFantasy
 
 <div class="float-nav">
 	<div class="fl-row row cur_sec" id="fl-1">
-		<div class="fl-sec" id="fl-sec-1">Biography</div>
+		<div class="fl-sec" id="fl-sec-1">
+			<a href="#bio"> Biography</a>
+		</div>
 	</div>
 	<div class="fl-row row" id="fl-2">
-		<div class="fl-sec" id="fl-sec-2">Filmography</div>
+		<div class="fl-sec" id="fl-sec-2">
+			<a href="#filmography"> Filmography</a>
+		</div>
 	</div>
 	<div class="fl-row row" id="fl-3">
-		<div class="fl-sec" id="fl-sec-3">Awards</div>
+		<div class="fl-sec" id="fl-sec-3">
+			<a href="#oscar"> Awards</a>
+		</div>
 	</div>
 </div>
 
 <div id="filmo">
-	<div class="banding banding-1">
+	<div class="banding banding-1"  id="filmography">
 		<p>Falling innto a</p>
 		<p>dreamscape filled</p>
 		<p>with wonders</p>
@@ -93,6 +99,7 @@ Home | CloudFantasy
 		</div>
 	</div>
 </div>
+<div id="oscar"></div>
 <div id="aw">
 	<div class="sec2-title">
 		Winning Oscar
