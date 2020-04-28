@@ -1,0 +1,78 @@
+
+/*background image*/
+.image-full{
+  /* The image used */
+
+  /* Full height */
+  height: 100%; 
+  min-width: 500px !important;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.nav-bar{
+	position: absolute;
+	/*border: 1px solid yellow;*/
+	margin: 0px 0 0 20%;
+	min-width: 900px;
+}
+.nav-bar>div{
+	/*border: 1px solid yellow;*/
+	/*min-width: 100px;*/
+}
+.nav-col{
+	text-align: left;
+	margin-top: 40px;
+	padding: 0 3%;
+	width: 20%;
+	/*text style*/
+	text-transform: uppercase;
+	letter-spacing: 6px;
+	color: white;
+	font-size: 16px;
+
+	font-family: din-condensed, sans-serif;
+	font-weight: 200;
+	font-style: normal;
+
+	/*chosen diff showing diff style*/
+
+}
+.nav-link{
+	color: white !important;
+    text-decoration: none !important;
+}
+.nav-link:hover{
+	font-weight: 400;
+	font-style: normal;
+}
+
+#logo-container{
+	margin: 40px 5% 0 10%;
+	position: absolute;
+}
+#logo-container>img{
+	width: 10%;
+}
+
+
+
+.main-logo{
+	position: absolute;
+	margin: 230px 0 0 20%;
+}
+.main-logo>img{
+	width: 65%;
+}
+
+.event{
+	position: absolute;
+	margin: 150px 0 0 75%;
+}
+.event>img{
+	width: 45%;
+}

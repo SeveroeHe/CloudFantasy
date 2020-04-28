@@ -1,0 +1,156 @@
+{% extends "CloudFantasy/baseWithNav.html" %}
+
+
+{% block title %}
+Home | CloudFantasy
+{% endblock %}
+
+{% block stylesheet%}
+{% load staticfiles %}
+	<link type="text/css" rel="stylesheet" href="{% static 'CloudFantasy/css/director.css' %}">
+
+{% endblock%}
+
+{% block content%}
+<div id="biography">
+	<div class="banding">
+		<p>A fantasist in</p>
+		<p>the truest sense</p>
+	</div>
+
+	<div class="content-row row">
+		<div class="left-intro col-md-4">
+			<img src="{% static 'CloudFantasy/images/director/mg.png' %}">
+		</div>
+		<div class="left-intro-1 col-md-4">
+			<p class="intro-title">Biography</p>
+			<p class="intro-p">
+				Michel Gondry is a French director, screenwriter, and producer noted for his inventive visual style and distinctive manipulation of mise en scène. He won an Academy Award for Best Original Screenplay as one of the writers of the 2004 film Eternal Sunshine of the Spotless Mind. His other films include the surrealistic science fantasy comedy The Science of Sleep (2006), the comedy Be Kind Rewind (2008), the superhero comedy The Green Hornet (2011), the drama The We and the I (2012), and also the romantic sci-fi tragedy Mood Indigo (2013).
+			</p>
+			<p class="intro-p">
+				Gondry’s career began with his emphasis on emotion. Much of his inspiration, he says, came from the film Le voyage en ballon. He stated: “When I watch this movie, I dream I’m flying and then I do stories where people are flying. I think it’s directly influencing.”
+			</p>
+			<p class="intro-p">
+				His career as a filmmaker actually started with producing music videos for the French rock band Oui Oui, in which he also served as a drummer. The style of his videos caught the attention of artist Björk, who asked him to direct the video for one of her songs “Human Behavior”. The collaboration proved long-lasting, with Gondry directing a total of eight music videos for Björk.
+			</p>
+		</div>
+		<div class="left-intro-2 col-md-4">
+			<p class="intro-p intro-p-r">
+				Other artists who have collaborated with Gondry on more than one occasion include Daft Punk, The White Stripes, The Chemical Brothers, The Vines, Steriogram, Radiohead, and Beck. Gondry’s video for Lucas Secon’s “Lucas with the Lid Off” was nominated in the Best Music Video (short form) category at the 37th Grammy Awards.
+			</p>
+			<p class="intro-p intro-p-r">
+				Gondry has also made several television commercials. He pioneered the “bullet time” technique later adapted in The Matrix in the 1996 “Smarienberg” commercial for Smirnoff vodka, and also directing a trio of inventive holiday-themed advertisements for clothing retailer Gap.
+			</p>
+			<p class="intro-p intro-p-r">
+				Gondry, along with directors Spike Jonze and David Fincher, is representative of the influx of music video directors into feature film. Gondry made his feature film debut in 2001 with Human Nature, garnering mixed reviews. His second film, Eternal Sunshine of the Spotless Mind, was released in 2004 and soon became one of the most critically acclaimed films of the year.
+			</p>
+		</div>
+	</div>
+</div>
+
+<div class="float-nav">
+	<div class="fl-row row cur_sec" id="fl-1">
+		<div class="fl-sec" id="fl-sec-1">Biography</div>
+	</div>
+	<div class="fl-row row" id="fl-2">
+		<div class="fl-sec" id="fl-sec-2">Filmography</div>
+	</div>
+	<div class="fl-row row" id="fl-3">
+		<div class="fl-sec" id="fl-sec-3">Awards</div>
+	</div>
+</div>
+
+<div id="filmo">
+	<div class="banding banding-1">
+		<p>Falling innto a</p>
+		<p>dreamscape filled</p>
+		<p>with wonders</p>
+	</div>
+
+	<div class="sec2-title">
+		Filmography
+	</div>
+
+	<div class="content-row-2 row">
+		<div class="left-filmo col-md-4 left-filmo-1">
+			<img id="filmo-left-1" src="{% static 'CloudFantasy/images/director/filmo-left-1-bp.png' %}">
+			<div class="filmo-blank-sec-mid"></div>
+			<img id="filmo-left-2" src="{% static 'CloudFantasy/images/director/filmo-mid-2.png' %}">
+			<div class="filmo-blank-sec-mid"></div>
+			<img id="filmo-left-3" src="{% static 'CloudFantasy/images/director/filmo-left-2.png' %}">
+		</div>
+		<div class="left-filmo col-md-4 left-filmo-2">
+			<img id="filmo-mid-1" src="{% static 'CloudFantasy/images/director/filmo-mid-1.png' %}">
+			<div class="filmo-blank-sec-mid"></div>
+			<img id="filmo-mid-2" src="{% static 'CloudFantasy/images/director/filmo-mid-2.png' %}">
+			<div class="filmo-blank-sec-mid"></div>
+			<img id="filmo-mid-3" src="{% static 'CloudFantasy/images/director/filmo-mid-3.png' %}">
+		</div>
+		<div class="left-filmo col-md-3 left-filmo-3">
+			<img id="filmo-right-1" src="{% static 'CloudFantasy/images/director/filmo-right-1-bp.png' %}">
+			<div class="filmo-blank-sec-mid"></div>
+			<img id="filmo-right-2" src="{% static 'CloudFantasy/images/director/filmo-right-2.png' %}">
+		</div>
+	</div>
+</div>
+<div id="aw">
+	<div class="sec2-title">
+		Winning Oscar
+	</div>
+	<div class="content-row-2 row">
+		<div class="left-aw left-aw-1 col-md-4">
+			<img src="{% static 'CloudFantasy/images/director/aw-left-1.png' %}">
+		</div>
+		<div class="left-aw left-aw-2 col-md-4">
+			<p class="intro-p intro-p-r-3">
+				While Michel Gondry has directed numerous features since 2001, his most notable work was the genre-bending 2004 film Eternal Sunshine of the Spotless Mind starring Jim Carrey, Kate Winslet, Mark Ruffalo and Elijah Wood.
+			</p>
+			<p class="intro-p intro-p-r-3">
+				Gondry won the Oscar for Best Original Screenplay with the film enduring as something of a modern cult classic with many critics hailing it as one of the greatest films of the century so far.
+			</p>
+			<div class="filmo-blank-sec-mid"></div>
+			<div class="row sm-content-row">
+				<div class="col-md-4 sm-col-title">
+					Film
+				</div>
+				<div class="col-md-8 sm-col sm-bold">
+					<span class="sm-italic"> Eternal Sunshine of the Spotless Mind </span>(2004)
+				</div>
+			</div>
+			<div class="row sm-content-row">
+				<div class="col-md-4 sm-col-title">
+					Award
+				</div>
+				<div class="col-md-8 sm-col">
+					The 77th Academy Awards
+				</div>
+			</div>
+			<div class="row sm-content-row">
+				<div class="col-md-4 sm-col-title">
+					Title
+				</div>
+				<div class="col-md-8 sm-col">
+					Best Original Screenplay
+				</div>
+			</div>
+			<div class="row sm-content-row">
+				<div class="col-md-4 sm-col-title">
+					Co-Winnner
+				</div>
+				<div class="col-md-8 sm-col">
+					Charlie Kaufman, Pierre Bismuth
+				</div>
+			</div>
+		</div>
+		<div class="left-aw left-aw-3 col-md-4">
+			<img src="{% static 'CloudFantasy/images/director/aw-right-1.png' %}">
+			<p class="right-aw-long">
+				"The beauty of doing film is that you construct whatever you do block by block and you can build something that will stay."
+			</p>
+			<p class="right-aw-name">
+				<span class="sm-bold"> —Michel Gondry </span>|<span class="sm-italic"> The Guardian</span> | 2007
+			</p>
+		</div>
+	</div>
+</div>
+{% endblock%}

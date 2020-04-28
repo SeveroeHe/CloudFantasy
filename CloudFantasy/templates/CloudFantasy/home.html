@@ -1,0 +1,36 @@
+{% extends "CloudFantasy/base.html" %}
+
+{% block title %}
+Home | CloudFantasy
+{% endblock %}
+
+{% block stylesheet%}
+{% load staticfiles %}
+	<link type="text/css" rel="stylesheet" href="{% static 'CloudFantasy/css/common.css' %}">
+	<link type="text/css" rel="stylesheet" href="{% static 'CloudFantasy/css/home.css' %}">
+{% endblock%}
+
+{% block content%}
+<div class="image-full" style="background-image: url('{% static "CloudFantasy/images/main/bg.png" %}');">
+	<div id="logo-container">
+		<img src="{% static 'CloudFantasy/images/logo.png' %}">
+	</div>
+	<div class="nav-bar row">
+		<div class="col-xs-6 nav-col"><a class="nav-link" href="/director" >director</a></div>
+		<div class="col-xs-6 nav-col"><a class="nav-link" href="/films" >films</a></div>
+		<div class="col-xs-6 nav-col"><a class="nav-link" href="/schedule" >schedule</a></div>
+		<div class="col-xs-6 nav-col"><a class="nav-link" href="/events" >events</a></div>
+		<div class="col-xs-6 nav-col"><a class="nav-link" href="/tickets" >tickets</a></div>
+	</div>
+	<div class="main-logo">
+		<img src="{% static 'CloudFantasy/images/main/main.png' %}">
+	</div>
+	<div class="event">
+		<img src="{% static 'CloudFantasy/images/main/event.png' %}">
+	</div>
+
+</div>
+
+
+
+{% endblock%}
