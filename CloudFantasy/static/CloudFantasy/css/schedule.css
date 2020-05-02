@@ -1,0 +1,89 @@
+#schedule-wrapper{
+	min-width: 1000px;
+	padding-top: 150px;
+}
+.main-wrapper>div{
+	/*border: 1px solid red;*/
+}
+.main-wrapper>div>p{
+	/*border: 1px solid red;*/
+}
+
+
+.main-wrapper{
+	margin: 80px 12% 200px 8%;
+	padding: 0 !important;
+	/*position: fixed;*/
+}
+.main-wrapper>div{
+	padding: 10px 0 0 4%;
+}
+.fix-col{
+	position: fixed;
+}
+
+.month{
+	font-family: ArcherOffice;
+	font-size: 50px;
+	color: #2d6466;
+}
+.day{
+	font-family: ArcherOffice;
+	font-size: 30px;
+	color: #d74129;
+	margin-top: -20px;
+}
+.time{
+	font-family: din-2014, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 16px;
+}
+
+.time-table{
+	padding: 30px 0 0 0;
+}
+.date{
+	font-family: ArcherOffice;
+	font-size: 16px;
+	color: #d74129;
+}
+
+.title-1{
+	font-family: din-2014, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 36px;
+	color: #2d6466;
+	padding: 20px 0 0 0;
+}
+.title-2{
+	margin: -20px 0 37px 0;
+}
+.year{
+	font-family: din-2014, sans-serif;
+	font-weight: 100;
+	font-style: normal;
+	font-size: 36px;
+	color: #2d6466;	
+}
+.theme{
+	font-family: din-2014, sans-serif;
+	font-weight: 100;
+	font-style: normal;
+	font-size: 16px;
+}
+
+.schedule-img{
+	padding: 20px 0 0 0;
+}
+.schedule-img>img{
+	width: 130%;
+}
+.scuedule-red-sm{
+	color: #db6659;
+	font-family: din-2014, sans-serif;
+	font-weight: 300;
+	font-style: normal;
+	padding: 30px 0 0 0;
+}

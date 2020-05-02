@@ -63,7 +63,8 @@ body, html {
 	width: 20%;
 	height: 100%; 
 	color: #f1f3f0;
-	display: none;
+	/*display: none;*/
+	opacity: 0;
   /* Center and scale the image nicely */
 	background-position: center;
 	background-repeat: no-repeat;
@@ -75,7 +76,7 @@ body, html {
 	width: 60%;
 }
 .cur_page{
-	display: inline;
+	opacity: 1;
 }
 
 #logo-container-1{

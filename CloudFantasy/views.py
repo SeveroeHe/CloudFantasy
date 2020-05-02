@@ -22,3 +22,6 @@ def home(request):
 
 def director(request):
 	return render(request, 'CloudFantasy/director.html', {'cur1':'cur_page'})
+
+def schedule(request):
+	return render(request, 'CloudFantasy/schedule.html', {'cur3':'cur_page'})
