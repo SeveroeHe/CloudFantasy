@@ -1,0 +1,95 @@
+#ticket-wrapper{
+	min-width: 1000px;
+	padding-top: 200px;
+}
+.main-wrapper>div{
+	/*border: 1px solid red;*/
+}
+.main-wrapper>div>div, .desc-row, .desc-row>div{
+	/*border: 1px solid red;*/
+}
+.click-row, .click-row>div{
+	/*border: 1px solid red;	*/
+}
+
+
+.ticket-title{
+	/*text-align: center;*/
+	font-family: ArcherOffice;
+	font-size: 50px;
+	color: #2d6466;
+}
+
+.main-wrapper{
+	margin: 50px 5% 150px 8%;
+	padding: 0 !important;
+	min-width: 1000px;
+}
+
+.pic{
+
+}
+.pic>img{
+	width: 100%;
+	padding: 120px 0 0 0;
+}
+.desc{
+	padding: 0 0 0 5%;
+}
+.desc-title{
+	font-family: din-2014, sans-serif;
+	font-size: 16px;
+	color: #d74129;
+	padding: 50px 0 20px 0;
+}
+.desc-row{
+	padding: 0 !important;
+}
+.desc-dot{
+	border-radius: 50%;
+	width: 10px;
+	height: 10px;
+	border: 1px solid #2d6466;
+	margin: 10px 0 ;
+}
+.desc-p{
+	font-family: din-2014, sans-serif;
+	font-weight: 300;
+	font-style: normal;
+	font-size: 16px;
+	padding: 5px 0 20px 0;
+}
+
+.click-row{
+	padding: 72px 0 0 5%;
+}
+.click-date{
+	font-family: din-2014, sans-serif;
+	font-weight: 300;
+	font-style: normal;
+	font-size: 16px;
+	padding: 5px 0 20px 0;
+	width: 90%;
+}
+.click-price{
+	text-align: center;
+	font-family: din-2014, sans-serif;
+	font-weight: 500;
+	font-style: normal;
+	font-size: 16px;
+	width: 90%;
+	padding: 10px 0;
+	margin: 15px 0;
+}
+.click-white{
+	color: white;
+	font-weight: 300;
+}
+.price-left{
+	color: #2d6466;
+	background-color: #d74129;
+}
+.price-right{
+	background-color: #2d6466;
+	color: #d74129;
+}

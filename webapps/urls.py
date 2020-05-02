@@ -21,5 +21,6 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', views.home, name = 'home'), # home page
     url(r'^director$', views.director, name = 'director'), # director page
-    url(r'^schedule$', views.schedule, name = 'schedule') # director page
+    url(r'^schedule$', views.schedule, name = 'schedule'), # director page
+    url(r'^tickets$', views.tickets, name = 'tickets') # director page
 ]

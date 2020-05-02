@@ -25,3 +25,6 @@ def director(request):
 
 def schedule(request):
 	return render(request, 'CloudFantasy/schedule.html', {'cur3':'cur_page'})
+
+def tickets(request):
+	return render(request, 'CloudFantasy/ticket.html', {'cur4':'cur_page'})

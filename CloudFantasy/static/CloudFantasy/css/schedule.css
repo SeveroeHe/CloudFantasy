@@ -44,7 +44,9 @@
 	padding: 30px 0 0 0;
 }
 .date{
-	font-family: ArcherOffice;
+	font-family: din-2014, sans-serif;
+	font-weight: 400;
+	font-style: normal;
 	font-size: 16px;
 	color: #d74129;
 }
@@ -59,13 +61,14 @@
 }
 .title-2{
 	margin: -20px 0 37px 0;
-}
-.year{
 	font-family: din-2014, sans-serif;
-	font-weight: 100;
+	font-weight: 400;
 	font-style: normal;
 	font-size: 36px;
-	color: #2d6466;	
+	color: #2d6466;
+}
+.year{
+	font-weight: 100;
 }
 .theme{
 	font-family: din-2014, sans-serif;
@@ -86,4 +89,7 @@
 	font-weight: 300;
 	font-style: normal;
 	padding: 30px 0 0 0;
+}
+.theme-italic{
+	font-style: italic;
 }

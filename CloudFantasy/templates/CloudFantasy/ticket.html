@@ -1,0 +1,194 @@
+{% extends "CloudFantasy/baseWithNav.html" %}
+
+
+{% block title %}
+Tickets | CloudFantasy
+{% endblock %}
+
+{% block stylesheet%}
+{% load staticfiles %}
+	<link type="text/css" rel="stylesheet" href="{% static 'CloudFantasy/css/ticket.css' %}">
+{% endblock%}
+
+{% block content%}
+<div id="ticket-wrapper">
+<div class="ticket-section">
+	<div class="row main-wrapper">
+		<div class="col-md-3 pic">
+			<img src="{% static 'CloudFantasy/images/ticket/ticket1.png' %}">
+		</div>
+		<div class="col-md-5 desc">
+			<div class="ticket-title">Platinum Pass</div>
+			<div class="desc-title">The Ultimate Festival Experience</div>
+			<div class="row desc-row">
+				<div class="col-md-1">
+					<div class="desc-dot"></div>
+				</div>
+				<div class="col-md-10 desc-p">Guaranteed access for one to the screenings of all five films.</div>
+			</div>
+			<div class="row desc-row">
+				<div class="col-md-1">
+					<div class="desc-dot"></div>
+				</div>
+				<div class="col-md-10 desc-p">Reserved priority seating and entry to screenings ahead of all other passholders and ticket holders.</div>
+			</div>
+			<div class="row desc-row">
+				<div class="col-md-1">
+					<div class="desc-dot"></div>
+				</div>
+				<div class="col-md-10 desc-p">Access to Opening Gala, plus complementary food and drinks.</div>
+			</div>
+			<div class="row desc-row">
+				<div class="col-md-1">
+					<div class="desc-dot"></div>
+				</div>
+				<div class="col-md-10 desc-p">Access for one to all events of the festival.</div>
+			</div>
+			<div class="row desc-row">
+				<div class="col-md-1">
+					<div class="desc-dot"></div>
+				</div>
+				<div class="col-md-10 desc-p">10% off your first purchase at the store of Video Vortex Brooklyn</div>
+			</div>
+			<div class="row desc-row">
+				<div class="col-md-1">
+					<div class="desc-dot"></div>
+				</div>
+				<div class="col-md-10 desc-p">Free parking at select locations</div>
+			</div>			
+		</div>
+		<div class="col-md-4">
+			<div class="row click-row">
+				<div class="col-md-6">
+					<div class="desc-title">Early Bird</div>
+					<div class="click-date">January 01–March 09, 2021</div>
+					<div class="click-price price-left"><span class="click-white">$ 445.00</span></div>
+				</div>
+				<div class="col-md-6">
+					<div class="desc-title">Full Price</div>
+					<div class="click-date">March 10–March 14, 2021</div>
+					<div class="click-price price-right"><span class="click-white">$ 465.00</span></div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</div>
+
+<div class="ticket-section">
+	<div class="row main-wrapper">
+		<div class="col-md-3 pic">
+			<img src="{% static 'CloudFantasy/images/ticket/ticket2.png' %}">
+		</div>
+		<div class="col-md-5 desc">
+			<div class="ticket-title">Full Series Pass</div>
+			<div class="desc-title">Our Most Popular Pass</div>
+			<div class="row desc-row">
+				<div class="col-md-1">
+					<div class="desc-dot"></div>
+				</div>
+				<div class="col-md-10 desc-p">Admission to the screenings of all five films.</div>
+			</div>
+			<div class="row desc-row">
+				<div class="col-md-1">
+					<div class="desc-dot"></div>
+				</div>
+				<div class="col-md-10 desc-p">Priority seating ahead of individual pass holders until passholder allotment is reached. Priority passholder seating is first come, first served and based on venue capacity.</div>
+			</div>
+			<div class="row desc-row">
+				<div class="col-md-1">
+					<div class="desc-dot"></div>
+				</div>
+				<div class="col-md-10 desc-p">10% off your first purchase at the store of Video Vortex Brooklyn.</div>
+			</div>
+			<div class="row desc-row">
+				<div class="col-md-1">
+					<div class="desc-dot"></div>
+				</div>
+				<div class="col-md-10 desc-p">Full Series passes exclude the Opening Gala and the special events of Installation of Gondry’s 20 Music Videos, Mini “Home Movie Factory” Workshop and Exhibition for Gondry’s Drawings and Props.</div>
+			</div>		
+		</div>
+		<div class="col-md-4">
+			<div class="row click-row">
+				<div class="col-md-6">
+					<div class="desc-title">Early Bird</div>
+					<div class="click-date">January 01–March 09, 2021</div>
+					<div class="click-price price-left"><span class="click-white">$ 225.00</span></div>
+				</div>
+				<div class="col-md-6">
+					<div class="desc-title">Full Price</div>
+					<div class="click-date">March 10–March 14, 2021</div>
+					<div class="click-price price-right"><span class="click-white">$ 250.00</span></div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</div>
+
+<div class="ticket-section">
+	<div class="row main-wrapper">
+		<div class="col-md-3 pic">
+			<img src="{% static 'CloudFantasy/images/ticket/ticket3.png' %}">
+		</div>
+		<div class="col-md-5 desc">
+			<div class="ticket-title">One Day Pass</div>
+			<div class="desc-title">Choosing Your Favorite</div>
+			<div class="row desc-row">
+				<div class="col-md-1">
+					<div class="desc-dot"></div>
+				</div>
+				<div class="col-md-10 desc-p">Admission to the selected day of the film festival including the special event and the screenings of one film and one music video on that given day. </div>
+			</div>
+			<div class="row desc-row">
+				<div class="col-md-1">
+					<div class="desc-dot"></div>
+				</div>
+				<div class="col-md-10 desc-p">10% off your first purchase at the store of Video Vortex Brooklyn.</div>
+			</div>
+			<div class="row desc-row">
+				<div class="col-md-1">
+					<div class="desc-dot"></div>
+				</div>
+				<div class="col-md-10 desc-p">The price of the last three days, May 20–22, includes those of the special events, so it is relatively higher than previous two days.</div>
+			</div>
+			<div class="row desc-row">
+				<div class="col-md-1">
+					<div class="desc-dot"></div>
+				</div>
+				<div class="col-md-10 desc-p">One Day passes exclude the Opening Gala on the first day of the festival.</div>
+			</div>		
+		</div>
+		<div class="col-md-4">
+			<div class="row click-row">
+				<div class="col-md-6">
+					<div class="desc-title">Early Bird</div>
+					<div class="click-date">January 01–March 09, 2021</div>
+					<div class="click-price price-left">May 18<span class="click-white"> | $ 45.00</span></div>
+					<div class="click-price price-left">May 19<span class="click-white"> | $ 45.00</span></div>
+					<div class="click-price price-left">May 20<span class="click-white"> | $ 85.00</span></div>
+					<div class="click-price price-left">May 21<span class="click-white"> | $ 95.00</span></div>
+					<div class="click-price price-left">May 22<span class="click-white"> | $ 85.00</span></div>
+				</div>
+				<div class="col-md-6">
+					<div class="desc-title">Full Price</div>
+					<div class="click-date">March 10–March 14, 2021</div>
+					<div class="click-price price-right">May 18<span class="click-white"> | $ 50.00</span></div>
+					<div class="click-price price-right">May 19<span class="click-white"> | $ 50.00</span></div>
+					<div class="click-price price-right">May 20<span class="click-white"> | $ 100.00</span></div>
+					<div class="click-price price-right">May 21<span class="click-white"> | $ 105.00</span></div>
+					<div class="click-price price-right">May 22<span class="click-white"> | $ 100.00</span></div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</div>
+
+
+
+
+
+
+</div>
+{% endblock%}
