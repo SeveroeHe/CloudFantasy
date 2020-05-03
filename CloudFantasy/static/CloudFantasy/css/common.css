@@ -40,12 +40,13 @@ body, html {
 }
 
 .nav-link-1{
-	color: #243b44 !important;
+	color: #243b44;
     text-decoration: none !important;
 }
 .nav-link-1:hover{
 	font-weight: 400;
 	font-style: normal;
+	color: #243b44;
 }
 
 .nav-bar-2{

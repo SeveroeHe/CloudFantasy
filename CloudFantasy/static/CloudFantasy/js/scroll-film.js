@@ -6,6 +6,26 @@ function update_cur(fid) {
   cur = fid;
 }
 
+function update_bar(scroll) {
+  if(scroll > 825) {
+    $("#nav-wrapper").css("background-color", "#f1f3f0");
+    $("#logo-container-1").css("background-color", "#f1f3f0");
+    $(".nav-link-1").css("color", "#243b44");
+  }else{
+    $("#nav-wrapper").css("background-color", "transparent");
+    $("#logo-container-1").css("background-color", "transparent");
+    $(".nav-link-1").css("color", "white");
+  }
+}
+
+function update_side_fix(scroll) {
+  if(scroll > 430) {
+    $("#float-nav").css("display", "inline");  
+  }else{
+    $("#float-nav").css("display", "none");
+  }
+  
+}
 $(document).ready(function(){
   // Add smooth scrolling to all links
   $("a").on('click', function(event) {
@@ -31,14 +51,17 @@ $(document).ready(function(){
   $(window).scroll(function (event) {
     var scroll = $(window).scrollTop();
     console.log(scroll);
-    // Do something
-    if(scroll < 1100 && cur != "#fl-1") {
+    //update basic style
+    update_side_fix(scroll);
+    update_bar(scroll);
+    //redirect section
+    if(scroll < 1500 && cur != "#fl-1") {
       update_cur("#fl-1");
     }
-    if(scroll >= 1100 && cur != "#fl-2") {
+    if(scroll >= 1500 && cur != "#fl-2") {
       update_cur("#fl-2");
     }
-    if (scroll >= 2800 && cur != "#fl-3") {
+    if (scroll >= 2500 && cur != "#fl-3") {
       update_cur("#fl-3");
     }
   });

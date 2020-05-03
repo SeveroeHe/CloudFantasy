@@ -1,0 +1,242 @@
+
+#nav-wrapper{
+	background-color: transparent;
+}
+#logo-container-1{
+	background-color: transparent;	
+}
+.nav-link-1{
+	color: white;
+}
+.nav-link-1:hover{
+	color: white;
+}
+
+/*floating nav sev*/
+#float-nav{
+	position: fixed;
+	right: 100px;
+	top: 500px;
+	/*border: 1px solid red;*/
+	z-index: 20;
+	display: none;
+}
+.fl-row{
+	width: 10px;
+	height: 10px;
+	border: 1px solid #2d6466;
+	padding: 5px;
+	margin: 40px;
+	border-radius: 50% !important;
+	font-size: 14px;
+}
+.fl-row>div>a{
+	text-decoration: none;
+	color: #2d6466;
+}
+.fl-pt{
+}
+.fl-sec{
+	margin: -10px 0 30px 30px;
+}
+.cur_sec{
+	background-color: #2d6466;
+}
+
+/*front page */
+.image-full{
+	height: 100%; 
+	/*min-height: 900px;*/
+	min-width: 500px !important;
+	/* Center and scale the image nicely */
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.film-slider{
+	position: absolute;
+	z-index: 20;
+	padding-left: 73%;
+	bottom: 30px;
+	width: 100%;
+	min-width: 1000px;
+}
+.film-slider-p{
+	font-size: 15px;
+	color: white;
+	font-family: din-2014, sans-serif;
+	font-weight: 50;
+	font-style: normal;
+	letter-spacing: 1.5px;
+	color: #f1f3f0;
+	opacity: 0.8;
+}
+
+
+/*film story*/
+.film-story, .film-story>div{
+	/*border: 1px solid red;*/
+}
+.film-story{
+	margin-right: 10%;
+	margin-bottom: 200px;
+}
+.story-left-col{
+	padding: 0 !important;
+}
+.story-left-top{
+	color: #2d6466;
+	font-family: din-2014, sans-serif;
+	font-weight: 400;
+	font-style: italic;
+	font-size: 20px;
+	margin:  300px 0 80px 40%;
+}
+.story-img-wrapper>img{
+	width: 100%;
+}
+.story-title{
+	font-family: ArcherOffice;
+	font-size: 50px;
+	color: #2d6466;
+	padding: 0 0 80px 0;
+}
+.story-mid-col{
+	padding: 290px 2% 0 4%;
+}
+.story-p{
+	font-family: din-2014, sans-serif;
+	font-weight: 300;
+	font-style: normal;
+	font-size: 16px;
+}
+.story-sm-float{
+	color: #db6659;
+	font-family: din-2014, sans-serif;
+	font-weight: 300;
+	font-style: normal;
+	font-size: 14px;
+	width: 40%;
+	padding: 0 0 200px 0;
+}
+.story-right-col{
+	padding: 200px 4% 0 2%;
+}
+
+
+
+/*cast page*/
+.cast-row, .cast-row>div{
+	/*border: 1px solid red;*/
+}
+.cast-row{
+	margin-right: 10%;
+	margin-bottom: 200px;
+}
+.cast-pic-row, .cast-pic-row>div{
+	/*border: 1px solid red;	*/
+}
+.cast-note-wrapper{
+	padding-top: 150px;
+}
+.cast-note-wrapper>img{
+	width: 100%;
+}
+.cast-img-wrapper>img{
+	width: 100%;
+}
+.cast-title{
+	font-family: ArcherOffice;
+	font-size: 50px;
+	color: #2d6466;
+	padding: 0 0 80px 0;
+}
+.cast-md-col{
+	padding: 0 1% 0 4%;
+}
+.cast-name{
+	font-family: din-2014, sans-serif;
+	font-weight: 600;
+	font-style: normal;
+	font-size: 16px;
+	color: #db6659;
+	padding: 15px 0 0 0;
+}
+.cast-role{
+	font-family: din-2014, sans-serif;
+	font-weight: 300;
+	font-style: normal;
+	font-size: 16px;
+	color: #2d6466;	
+	margin: -15px 0;
+	padding-bottom: 40px;
+
+}
+.cast-hidden{
+	opacity: 0;
+}
+.cast-right-col{
+	padding: 171px 4% 0 1%;
+}
+
+
+
+
+/*ppt section*/
+.ppt-row{
+	width: 100%;
+	background-color: #db6659;
+	min-height: 1200px;
+}
+.ppt-row, .ppt-row>div{
+	/*border: 1px solid white;*/
+}
+.ppt-sec-row, .ppt-sec-row>div{
+	/*border: 1px solid white;*/
+}
+.ppt-title{
+	margin:  0 0 0 11%;
+	width: 50%;
+	padding: 200px 0 0 0;
+}
+.ppt-title-lg{
+	color: white;
+	font-family: din-2014, sans-serif;
+	font-weight: 400;
+	font-style: italic;
+	font-size: 40px;
+}
+.ppt-title-name{
+	color: black;
+	font-family: din-2014, sans-serif;
+	font-weight: 100;
+	font-style: italic;
+	font-size: 16px;
+	margin-top: -10px;
+}
+.span-bold{
+	font-weight: 600;
+}
+.ppt-sec-row{
+	margin-right: 10%;
+	margin-bottom: 300px;
+}
+.ppt-mid-col{
+	padding: 80px 1% 0 4%;
+}
+.ppt-right-col{
+	padding: 80px 1% 0 2%;	
+}
+.ppt-sec-name{
+	color: white;
+	font-family: din-2014, sans-serif;
+	font-weight: 100;
+	font-size: 16px;
+}
+.ppt-sec-desc{
+	color: black;
+	font-family: din-2014, sans-serif;
+	font-weight: 100;
+	font-size: 16px;
+	margin-top: -15px;
+}

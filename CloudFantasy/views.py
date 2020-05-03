@@ -28,3 +28,6 @@ def schedule(request):
 
 def tickets(request):
 	return render(request, 'CloudFantasy/ticket.html', {'cur4':'cur_page'})
+
+def films(request):
+	return render(request, 'CloudFantasy/film1.html', {'cur2':'cur_page'})
