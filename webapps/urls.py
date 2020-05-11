@@ -23,5 +23,10 @@ urlpatterns = [
     url(r'^director$', views.director, name = 'director'), # director page
     url(r'^schedule$', views.schedule, name = 'schedule'), # director page
     url(r'^tickets$', views.tickets, name = 'tickets'), # director page
-    url(r'^films$', views.films, name = 'films') # director page
+    url(r'^films$', views.films, name = 'films'), # film page
+    url(r'^film1$', views.film1, name = 'film1'), # film page
+    url(r'^film2$', views.film2, name = 'film2'), # film page
+    url(r'^film3$', views.film3, name = 'film3'), # film page
+    url(r'^film4$', views.film4, name = 'film4'), # film page
+    url(r'^film5$', views.film5, name = 'film5') # film page
 ]

@@ -30,4 +30,20 @@ def tickets(request):
 	return render(request, 'CloudFantasy/ticket.html', {'cur4':'cur_page'})
 
 def films(request):
-	return render(request, 'CloudFantasy/film1.html', {'cur2':'cur_page'})
+	return render(request, 'CloudFantasy/film1.html', {'cur2':'cur_page', "dk": "dk"})
+
+def film1(request):
+	return render(request, 'CloudFantasy/film1.html', {'cur2':'cur_page', "dk": "dk"})
+
+def film2(request):
+	return render(request, 'CloudFantasy/film2.html', {'cur2':'cur_page'})
+
+def film3(request):
+	return render(request, 'CloudFantasy/film3.html', {'cur2':'cur_page'})
+
+def film4(request):
+	return render(request, 'CloudFantasy/film4.html', {'cur2':'cur_page'})
+
+def film5(request):
+	return render(request, 'CloudFantasy/film5.html', {'cur2':'cur_page'})
+

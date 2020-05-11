@@ -1,0 +1,206 @@
+{% extends "CloudFantasy/baseWithNav.html" %}
+
+
+{% block title %}
+Films | CloudFantasy
+{% endblock %}
+
+{% block stylesheet%}
+{% load staticfiles %}
+	<link type="text/css" rel="stylesheet" href="{% static 'CloudFantasy/css/films.css' %}">
+	<script src="{% static 'CloudFantasy/js/scroll-film.js' %}"></script>
+{% endblock%}
+
+{% block content%}
+<div id="film2" class="image-full" style="background-image: url('{% static "CloudFantasy/images/film/film2/film2.png" %}');">
+	<div class="film-slider">
+		<p class="film-slider-p">>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="film-pg-redirect" href="/film3">Be Kind Rewind</a></p>
+		<p class="film-slider-p"><&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="film-pg-redirect" href="/film1">Eternal Sunshine of the Spotless Mind</a></p>
+	</div>
+</div>
+
+<div id="float-nav">
+	<div class="fl-row row cur_sec" id="fl-1">
+		<div class="fl-sec" id="fl-sec-1">
+			<a href="#story"> The&nbsp;Story</a>
+		</div>
+	</div>
+	<div class="fl-row row" id="fl-2">
+		<div class="fl-sec" id="fl-sec-2">
+			<a href="#cast"> Main&nbsp;Cast</a>
+		</div>
+	</div>
+	<div class="fl-row row" id="fl-3">
+		<div class="fl-sec" id="fl-sec-3">
+			<a href="#review"> Reviews</a>
+		</div>
+	</div>
+</div>
+
+
+<div class="film-story row" >
+	<div class="col-md-4 story-left-col">
+		<p class="story-left-top">
+			“Will you marry me when  you are seventy? You’d have nothing to lose.”
+		</p>
+		<div class="story-img-wrapper">
+			<img src="{% static 'CloudFantasy/images/film/film2/film2-story-left-top.png' %}">
+		</div>
+	</div>
+	<div class="col-md-4 story-mid-col">
+		<p class="story-title">
+			The Story
+		</p>
+		<p class="story-p">
+			Stéphane Miroux (Gael García Bernal) is a man whose vivid dreams and imagination often interfere with his ability to interact with reality. He is coaxed back to his childhood home after his divorced father passes away, and his mother helps him find a job in a calendar printing company. His mother implies the position is a creative role, and he prepares colorful drawings. However, nobody really appreciates his talents and it transpires that his mother had led him on—the real vacancy is for nothing more than mundane typesetting work.
+		</p>
+		<p class="story-p">
+			While leaving his apartment to go to work one day, Stéphane injures his hand helping his new neighbor, a girl named Stéphanie (Charlotte Gainsbourg), move a piano into her apartment. Stéphanie, invites Stéphane into her apartment (unaware that he lives next door) where her friend Zoé tends to his wound. And Stéphane initially has a crush on Zoé but he suspects Stéphanie likes him.
+		</p>
+	</div>
+	<div class="col-md-4 story-right-col">
+		<div class="story-sm-float" id="story">
+			A smart and refreshing view of the young and the dreamers
+		</div>
+		<p class="story-p">
+			Stéphane realizes that Stéphanie, similar  to himself, is creative and artistic. They plan a project for use in a short animated film. Stéphane pretends that he isn’t Stéphanie’s neighbor, pretending to leave the building when he leaves her apartment. That night, when he is sleepwalking at night he writes a confusing note to Stéphanie that asks for Zoé’s phone number. Stéphane realizes his mistake upon waking and retrieves the letter with a coat hanger, unaware that Stéphanie has already read it.
+		</p>
+		<p class="story-p">
+			Surreal and naturalistic elements begin to overlap, and the viewer is often uncertain of which portions constitute reality and which are merely dreams. As this line gradually becomes more blurred, Stéphane becomes more enamored with Stéphanie the more  he spends time with her and shares many inventions with her.
+		</p>
+	</div>
+</div>
+
+<div class="cast-row row">
+	<div class="col-md-4 story-left-col">
+		<div class="cast-note-wrapper">
+			<img src="{% static 'CloudFantasy/images/film/film2/film2-note.png' %}">
+		</div>
+	</div>
+	<div class="col-md-4 cast-md-col">
+		<p class="cast-title" id="cast">
+			Main Cast
+		</p>
+		<div class="cast-pic-row row">
+			<div class="col-md-6">
+				<div class="cast-img-wrapper">
+					<img src="{% static 'CloudFantasy/images/film/film2/film2-cast-1.png' %}">
+				</div>
+				<p class="cast-name">Gael Garcia Bernal</p>
+				<p class="cast-role">Stéphane</p>
+
+				<div class="cast-img-wrapper cast-hidden">
+					<img src="{% static 'CloudFantasy/images/film/film2/film2-cast-1.png' %}">
+				</div>
+				<p class="cast-name cast-hidden">Charlotte Gainsbourg</p>
+				<p class="cast-role cast-hidden">Stéphanie</p>
+			</div>
+			<div class="col-md-6">
+				<div class="cast-img-wrapper">
+					<img src="{% static 'CloudFantasy/images/film/film2/film2-cast-2.png' %}">
+				</div>
+				<p class="cast-name">Charlotte Gainsbourg</p>
+				<p class="cast-role">Stéphanie</p>
+				<div class="cast-blank"></div>
+				<div class="cast-img-wrapper">
+					<img src="{% static 'CloudFantasy/images/film/film2/film2-cast-3.png' %}">
+				</div>
+				<p class="cast-name">Miou-Miou</p>
+				<p class="cast-role">Christine</p>
+			</div>
+		</div>
+	</div>
+	<div class="col-md-4 cast-right-col">
+		<div class="cast-pic-row row">
+			<div class="col-md-6">
+				<div class="cast-img-wrapper">
+					<img src="{% static 'CloudFantasy/images/film/film2/film2-cast-4.png' %}">
+				</div>
+				<p class="cast-name">Alain Chabat</p>
+				<p class="cast-role">Guy</p>
+
+				<div class="cast-img-wrapper">
+					<img src="{% static 'CloudFantasy/images/film/film2/film2-cast-5.png' %}">
+				</div>
+				<p class="cast-name">Emma de Caunes</p>
+				<p class="cast-role">Zoé</p>
+			</div>
+			<div class="col-md-6">
+				<div class="cast-img-wrapper cast-hidden">
+					<img src="{% static 'CloudFantasy/images/film/film2/film2-cast-2.png' %}">
+				</div>
+				<p class="cast-name cast-hidden">Audrey Tautou</p>
+				<p class="cast-role cast-hidden">Chloé</p>
+
+				<div class="cast-img-wrapper">
+					<img src="{% static 'CloudFantasy/images/film/film2/film2-cast-6.png' %}">
+				</div>
+				<p class="cast-name">Sacha Bourdo</p>
+				<p class="cast-role">Serge</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="ppt-row">
+	<div class="ppt-title">
+		<p class="ppt-title-lg" id="review">
+			“Michel Gondry’s overactive imagination alone makes the film worth seeing.”
+		</p>
+		<p class="ppt-title-name">
+			<span class="span-bold">—Bradley Steinbacher |</span> The Stranger</p>
+	</div>
+	<div class="ppt-sec-row row">
+		<div class="col-md-4 cast-hidden">.</div>
+		<div class="col-md-4 ppt-mid-col">
+			<p class="ppt-sec-name">
+				Wendy Ide | Times (UK)
+			</p>
+			<p class="ppt-sec-desc">
+				Gondry always manages to maintain a childlike  wonder in the magic of creating a moving image, and never is it more evident than in this film.
+			</p>
+
+			<p class="ppt-sec-name">
+				Ali Gray | TheShiznit.co.uk
+			</p>
+			<p class="ppt-sec-desc">
+				The Science Of Sleep is truly a delight at times, a startlingly original piece that is as accessible as Eternal Sunshine but is every bit as magnificent when in full flow.
+			</p>
+			<p class="ppt-sec-name cast-hidden">
+				Sean Axmaker | Seanax.com
+			</p>
+			<p class="ppt-sec-desc cast-hidden">
+				The wacky sight gags and psycho-drama slapstick is tinged with melancholy and regret as Joel realizes that his experiences are what make him who he is.
+			</p>
+		</div>
+		<div class="col-md-4 ppt-right-col">
+			<p class="ppt-sec-name">
+				Peter Bradshaw | The Guardian
+			</p>
+			<p class="ppt-sec-desc">
+				A thwarted love story that does not trade  in the degraded cliches either of romance or conventional sexiness
+			</p>
+			<p class="ppt-sec-name">
+				Joshua Starnes | ComingSoon.net
+			</p>
+			<p class="ppt-sec-desc">
+				It’s kind of weird and very French, but don’t let that scare you. The Science of Sleep is well worth your time.
+			</p>
+
+			<p class="ppt-sec-name">
+				A.O. Scott | The NYTimes
+			</p>
+			<p class="ppt-sec-desc">
+				Michel Gondry’s beguiling new film is so profoundly idiosyncratic, and so confident in its oddity, that any attempt to describe it is bound to be misleading
+			</p>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+{% endblock%}

@@ -1,0 +1,209 @@
+{% extends "CloudFantasy/baseWithNav.html" %}
+
+
+{% block title %}
+Films | CloudFantasy
+{% endblock %}
+
+{% block stylesheet%}
+{% load staticfiles %}
+	<link type="text/css" rel="stylesheet" href="{% static 'CloudFantasy/css/films.css' %}">
+	<script src="{% static 'CloudFantasy/js/scroll-film.js' %}"></script>
+{% endblock%}
+
+{% block content%}
+<div id="film4" class="image-full" style="background-image: url('{% static "CloudFantasy/images/film/film4/film4.png" %}');">
+	<div class="film-slider">
+		<p class="film-slider-p">>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="film-pg-redirect" href="/film5">Microbe & Gasoline</a></p>
+		<p class="film-slider-p"><&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="film-pg-redirect" href="/film3">Be Kind Rewind</a></p>
+	</div>
+</div>
+
+<div id="float-nav">
+	<div class="fl-row row cur_sec" id="fl-1">
+		<div class="fl-sec" id="fl-sec-1">
+			<a href="#story"> The&nbsp;Story</a>
+		</div>
+	</div>
+	<div class="fl-row row" id="fl-2">
+		<div class="fl-sec" id="fl-sec-2">
+			<a href="#cast"> Main&nbsp;Cast</a>
+		</div>
+	</div>
+	<div class="fl-row row" id="fl-3">
+		<div class="fl-sec" id="fl-sec-3">
+			<a href="#review"> Reviews</a>
+		</div>
+	</div>
+</div>
+
+
+<div class="film-story row" >
+	<div class="col-md-4 story-left-col">
+		<p class="story-left-top">
+			“If we screw this moment, we try the next. And if we fail the next...we have our whole lives to get it right.”
+		</p>
+		<div class="story-img-wrapper">
+			<img src="{% static 'CloudFantasy/images/film/film4/film4-story-left-top.png' %}">
+		</div>
+	</div>
+	<div class="col-md-4 story-mid-col">
+		<p class="story-title">
+			The Story
+		</p>
+		<p class="story-p">
+			Eminently inventive Michel Gondry manages to find inspiration from the French novelist Boris Vian’s cult novel to lay the foundation for this visionary and romantic love story starring Audrey Tautou (Amélie, Coco Before Chanel) and Romain Duris (The Beat My Heart Skipped).
+		</p>
+		<p class="story-p">
+			Set in a charmingly surreal Paris, wealthy bachelor Colin (Romain Duris) spends his time developing his pianocktail (a cocktail-making piano) and devouring otherworldly dishes prepared by his trusty chef Nicolas. When Colin knows that his friend Chick, a fellow acolyte of the philosopher Jean-Sol Partre, has a new American girlfriend, our lonely hero attends a friend’s party in hopes of falling in love himself. He soon meets Chloé (Audrey Tautou) and before they know it, they are dancing to Duke Ellington and plunging headfirst into a romance. 
+		</p>
+	</div>
+	<div class="col-md-4 story-right-col">
+		<div class="story-sm-float" id="story">
+			As inventive, sweet and sombre as a Duke Ellington song
+		</div>
+		<p class="story-p">
+			However, Their whirlwind courtship is tested when an unusual illness plagues Chloé; a flower begins to grow in her lungs. To save her, Colin discovers the only cure is to surround Chloé with a never-ending supply of fresh and beautiful flowers.
+		</p>
+		<p class="story-p">
+			All the blisses of this movie wipe you out. The first hour is so happily innovative with its Richard Lester zip, and the last half-hour so forlorn (the Jean-Paul Sartre sight gags aren’t a joke). Gondry has such an incomparable understanding of the way in which strange and unexpected sights can possibly tickle you. What he sometimes lacks as a filmmaker is the awareness that he can in fact tickle an audience to death.
+		</p>
+	</div>
+</div>
+
+<div class="cast-row row">
+	<div class="col-md-4 story-left-col">
+		<div class="cast-note-wrapper">
+			<img src="{% static 'CloudFantasy/images/film/film4/film4-note.png' %}">
+		</div>
+	</div>
+	<div class="col-md-4 cast-md-col">
+		<p class="cast-title" id="cast">
+			Main Cast
+		</p>
+		<div class="cast-pic-row row">
+			<div class="col-md-6">
+				<div class="cast-img-wrapper">
+					<img src="{% static 'CloudFantasy/images/film/film4/film4-cast-1.png' %}">
+				</div>
+				<p class="cast-name">Romain Duris</p>
+				<p class="cast-role">Colin</p>
+
+				<div class="cast-img-wrapper cast-hidden">
+					<img src="{% static 'CloudFantasy/images/film/film4/film4-cast-1.png' %}">
+				</div>
+				<p class="cast-name cast-hidden">Romain Duris</p>
+				<p class="cast-role cast-hidden">Colin</p>
+			</div>
+			<div class="col-md-6">
+				<div class="cast-img-wrapper">
+					<img src="{% static 'CloudFantasy/images/film/film4/film4-cast-2.png' %}">
+				</div>
+				<p class="cast-name">Audrey Tautou</p>
+				<p class="cast-role">Chloé</p>
+				<div class="cast-blank"></div>
+				<div class="cast-img-wrapper">
+					<img src="{% static 'CloudFantasy/images/film/film4/film4-cast-3.png' %}">
+				</div>
+				<p class="cast-name">Gad Elmaleh</p>
+				<p class="cast-role">Chick</p>
+			</div>
+		</div>
+	</div>
+	<div class="col-md-4 cast-right-col">
+		<div class="cast-pic-row row">
+			<div class="col-md-6">
+				<div class="cast-img-wrapper">
+					<img src="{% static 'CloudFantasy/images/film/film4/film4-cast-4.png' %}">
+				</div>
+				<p class="cast-name">Omar Sy</p>
+				<p class="cast-role">Nicolas</p>
+
+				<div class="cast-img-wrapper">
+					<img src="{% static 'CloudFantasy/images/film/film4/film4-cast-5.png' %}">
+				</div>
+				<p class="cast-name">Aïssa Maïga</p>
+				<p class="cast-role">Alise</p>
+			</div>
+			<div class="col-md-6">
+				<div class="cast-img-wrapper cast-hidden">
+					<img src="{% static 'CloudFantasy/images/film/film4/film4-cast-2.png' %}">
+				</div>
+				<p class="cast-name cast-hidden">Audrey Tautou</p>
+				<p class="cast-role cast-hidden">Chloé</p>
+
+				<div class="cast-img-wrapper">
+					<img src="{% static 'CloudFantasy/images/film/film4/film4-cast-6.png' %}">
+				</div>
+				<p class="cast-name">Charlotte Le Bonn</p>
+				<p class="cast-role">Isis</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="ppt-row">
+	<div class="ppt-title">
+		<p class="ppt-title-lg" id="review">
+			“The rich display and rapid-fire visual imagings of Mood Indigo, even when muted by sorrow, are unrelenting. ”
+		</p>
+		<p class="ppt-title-name">
+			<span class="span-bold">—Linda Barnard |</span> Toronto Star
+		</p>
+	</div>
+	<div class="ppt-sec-row row">
+		<div class="col-md-4 cast-hidden">.</div>
+		<div class="col-md-4 ppt-mid-col">
+			<p class="ppt-sec-name">
+				Steven Rea | Philadelphia Inquirer
+			</p>
+			<p class="ppt-sec-desc">
+				It’s hard not to take delight in Michel Gondry and his whooshing, bendable universe.
+			</p>
+
+			<p class="ppt-sec-name">
+				John Anderson | Newsday
+			</p>
+			<p class="ppt-sec-desc">
+				A mad mix of what Tex Avery, Rube Goldberg and the silent-film fantasist Georges Melies might have come up with if they’d put their feverish heads together.
+			</p>
+
+			<p class="ppt-sec-name">
+				Emily Robinson | Bust Magazine
+			</p>
+			<p class="ppt-sec-desc">
+				Michel Gondry’s latest endeavor reads like a twisted storybook, weaving realistic tropes with fantastic visions of both the intensely light and the intensely dark.
+			</p>
+		</div>
+		<div class="col-md-4 ppt-right-col">
+			<p class="ppt-sec-name">
+				Annalee Newitz | io9.com
+			</p>
+			<p class="ppt-sec-desc">
+				It’s sort of a stoner art film, and I mean that in the best possible way. If you can watch it with your eyes, and ignore the dialogue in the second half of the film, I guarantee you an amazing, psychedelic journey into a posthuman future you’ve never seen before.
+			</p>
+
+			<p class="ppt-sec-name">
+				Bill Graham | The Film Stage
+			</p>
+			<p class="ppt-sec-desc">
+				Richly told through Gondry’s signature visual oddities and whimsy, Mood Indigo posits itself as something very raw and intensely original.
+			</p>
+
+			<p class="ppt-sec-name">
+				Eleanor Ringel Cater | Saporta Report
+			</p>
+			<p class="ppt-sec-desc">
+				You don’t know how tempting it is to review Mood Indigo by simply listing all the visual delights Michel Gondry crams into his newest flight of fancy.
+			</p>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+{% endblock%}

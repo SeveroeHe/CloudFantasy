@@ -1,0 +1,212 @@
+{% extends "CloudFantasy/baseWithNav.html" %}
+
+
+{% block title %}
+Films | CloudFantasy
+{% endblock %}
+
+{% block stylesheet%}
+{% load staticfiles %}
+	<link type="text/css" rel="stylesheet" href="{% static 'CloudFantasy/css/films.css' %}">
+	<script src="{% static 'CloudFantasy/js/scroll-film.js' %}"></script>
+{% endblock%}
+
+{% block content%}
+<div id="film5" class="image-full" style="background-image: url('{% static "CloudFantasy/images/film/film5/film5.png" %}');">
+	<div class="film-slider">
+		<p class="film-slider-p"><&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="film-pg-redirect" href="/film4">Mood Indigo</a></p>
+		<p class="film-slider-p cast-hidden"><&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Be Kind Rewind</p>
+	</div>
+</div>
+
+<div id="float-nav">
+	<div class="fl-row row cur_sec" id="fl-1">
+		<div class="fl-sec" id="fl-sec-1">
+			<a href="#story"> The&nbsp;Story</a>
+		</div>
+	</div>
+	<div class="fl-row row" id="fl-2">
+		<div class="fl-sec" id="fl-sec-2">
+			<a href="#cast"> Main&nbsp;Cast</a>
+		</div>
+	</div>
+	<div class="fl-row row" id="fl-3">
+		<div class="fl-sec" id="fl-sec-3">
+			<a href="#review"> Reviews</a>
+		</div>
+	</div>
+</div>
+
+
+<div class="film-story row" >
+	<div class="col-md-4 story-left-col">
+		<p class="story-left-top">
+			“Go back to the last thought you remember. It’ll take you to the next one, and the one after that, until you get the right one.”
+		</p>
+		<div class="story-img-wrapper">
+			<img src="{% static 'CloudFantasy/images/film/film5/film5-story-left-top.png' %}">
+		</div>
+	</div>
+	<div class="col-md-4 story-mid-col">
+		<p class="story-title">
+			The Story
+		</p>
+		<p class="story-p">
+			The film tells a story of two teenage friends who embark on a road trip across France with a house on wheels built by themselves.
+		</p>
+		<p class="story-p">
+			Gasoline is the nickname of Théo (Théophile Baquet), a transfer student and mechanical whiz who conceives the notion that he and his classmate, Daniel (Ange Dargent), nicknamed Microbe, for his small size, could escape their oppressive families. Both are social outsiders.
+		</p>
+		<p class="story-p">
+			Théo, with his leather jacket and tousled hair, is a soft contemporary version of what used to be called a hood. Daniel is a classic nerd. An aspiring artist and writer, he also wears his hair long, but with his delicate features and refined air, he is mistaken for a girl at times. Although distressed by the confusion, he does not face the brutal rites of self-initiation endured by so many teenagers in American films. As resourceful in his way as Théo, he draws pornography, which he hides under a mattress and uses for self-stimulation.
+		</p>
+	</div>
+	<div class="col-md-4 story-right-col">
+		<div class="story-sm-float" id="story">
+			As inventive, sweet  and sombre as a Duke Ellington song
+		</div>
+		<p class="story-p">
+			“Microbe and Gasoline” minimizes the class differences between the boys. Théo’s bitter, angry parents are a junk dealer and his unkempt wife, who is ailing after two heart attacks. Daniel is one of three sons being raised by a clinging, overprotective middle- class mother.
+		</p>
+		<p class="story-p">
+			Although their life on the road has its perils, the journey feels like an idyllic, gentle rite of passage. The house on wheels proves to be a successful disguise that enables them to park near the side of a road and avoid police harassment as it seems like a rooted structure. Of course, they also have small misadventures. Stopping on the property of dentist, they are welcomed but flee from a window as he tries to examine their teeth, which he declares a disaster.
+		</p>
+	</div>
+</div>
+
+<div class="cast-row row">
+	<div class="col-md-4 story-left-col">
+		<div class="cast-note-wrapper">
+			<img src="{% static 'CloudFantasy/images/film/film5/film5-note.png' %}">
+		</div>
+	</div>
+	<div class="col-md-4 cast-md-col">
+		<p class="cast-title" id="cast">
+			Main Cast
+		</p>
+		<div class="cast-pic-row row">
+			<div class="col-md-6">
+				<div class="cast-img-wrapper">
+					<img src="{% static 'CloudFantasy/images/film/film5/film5-cast-1.png' %}">
+				</div>
+				<p class="cast-name">Ango Dargent</p>
+				<p class="cast-role">Daniel</p>
+
+				<div class="cast-img-wrapper cast-hidden">
+					<img src="{% static 'CloudFantasy/images/film/film5/film5-cast-1.png' %}">
+				</div>
+				<p class="cast-name cast-hidden">Romain Duris</p>
+				<p class="cast-role cast-hidden">Colin</p>
+			</div>
+			<div class="col-md-6">
+				<div class="cast-img-wrapper">
+					<img src="{% static 'CloudFantasy/images/film/film5/film5-cast-2.png' %}">
+				</div>
+				<p class="cast-name">Théophile Baquet</p>
+				<p class="cast-role">Théo</p>
+				<div class="cast-blank"></div>
+				<div class="cast-img-wrapper">
+					<img src="{% static 'CloudFantasy/images/film/film5/film5-cast-3.png' %}">
+				</div>
+				<p class="cast-name">Andrey Tautou</p>
+				<p class="cast-role">Marie-Thérèse</p>
+			</div>
+		</div>
+	</div>
+	<div class="col-md-4 cast-right-col">
+		<div class="cast-pic-row row">
+			<div class="col-md-6">
+				<div class="cast-img-wrapper">
+					<img src="{% static 'CloudFantasy/images/film/film5/film5-cast-4.png' %}">
+				</div>
+				<p class="cast-name">Diane Besnier</p>
+				<p class="cast-role">Laura</p>
+
+				<div class="cast-img-wrapper">
+					<img src="{% static 'CloudFantasy/images/film/film5/film5-cast-5.png' %}">
+				</div>
+				<p class="cast-name">Agathe Peigney</p>
+				<p class="cast-role">Agathe</p>
+			</div>
+			<div class="col-md-6">
+				<div class="cast-img-wrapper cast-hidden">
+					<img src="{% static 'CloudFantasy/images/film/film5/film5-cast-2.png' %}">
+				</div>
+				<p class="cast-name cast-hidden">Audrey Tautou</p>
+				<p class="cast-role cast-hidden">Chloé</p>
+
+				<div class="cast-img-wrapper">
+					<img src="{% static 'CloudFantasy/images/film/film5/film5-cast-6.png' %}">
+				</div>
+				<p class="cast-name">Douglas Brosset</p>
+				<p class="cast-role">Oscar</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="ppt-row">
+	<div class="ppt-title">
+		<p class="ppt-title-lg" id="review">
+			“We appreciate the unique personalities of these two kids, and we’re glad they found each other.”
+		</p>
+		<p class="ppt-title-name">
+			<span class="span-bold">—Richard Roeper |</span> Chicago Sun-Times
+		</p>
+	</div>
+	<div class="ppt-sec-row row">
+		<div class="col-md-4 cast-hidden">.</div>
+		<div class="col-md-4 ppt-mid-col">
+			<p class="ppt-sec-name">
+				John Hartl | Seattle Times
+			</p>
+			<p class="ppt-sec-desc">
+				The laughs are sometimes bigger than expected, and so are the emotions stirred by the bittersweet finale.
+			</p>
+
+			<p class="ppt-sec-name">
+				Matthew Lickona | San Diego Reader
+			</p>
+			<p class="ppt-sec-desc">
+				Director Gondry conveys a feeling of happy fantasy: two against the world, managing despite everything.
+			</p>
+
+			<p class="ppt-sec-name">
+				Tirdad Derakhshani | Philadelphia Inquirer
+			</p>
+			<p class="ppt-sec-desc">
+				A cross between François Truffaut’s sometimes-harrowing dramas of childhood and a Steven Spielberg fantasy, Gondry’s film abounds with sentiment—without falling prey to sentimentality.
+			</p>
+		</div>
+		<div class="col-md-4 ppt-right-col">
+			<p class="ppt-sec-name">
+				Jessica Baxter | Hammer to Nail
+			</p>
+			<p class="ppt-sec-desc">
+				Michel Gondry leaves the creativity and whimsy to his characters, resulting in his best work in ages.
+			</p>
+
+			<p class="ppt-sec-name">
+				Stephen Holden | The NYTimes
+			</p>
+			<p class="ppt-sec-desc">
+				This coming-of-age tale centers on two adolescent outsiders who hit the road in a zany homemade vehicle that doubles as a dwelling.
+			</p>
+
+			<p class="ppt-sec-name">
+				Daniel Barnes | Dare Daniel
+			</p>
+			<p class="ppt-sec-desc">
+				A lo-fi, low-stakes charmer from Michel Gondry, light years removed from the insufferable manic quirk of Mood Indigo, but still a disconnected effort just barely tethered to its own meager narrative.
+			</p>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+{% endblock%}

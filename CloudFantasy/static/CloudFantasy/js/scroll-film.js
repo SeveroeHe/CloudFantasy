@@ -1,4 +1,11 @@
 var cur = "#fl-1";
+var id_map = {
+  "film1" : "#243b44",
+  "film2" : "white",
+  "film3" : "white",
+  "film4" : "white",
+}
+var origin_nav_color = null;
 
 function update_cur(fid) {
   $(cur).removeClass("cur_sec");
@@ -6,7 +13,7 @@ function update_cur(fid) {
   cur = fid;
 }
 
-function update_bar(scroll) {
+function update_bar(scroll, origin_nav_color) {
   if(scroll > 825) {
     $("#nav-wrapper").css("background-color", "#f1f3f0");
     $("#logo-container-1").css("background-color", "#f1f3f0");
@@ -14,7 +21,7 @@ function update_bar(scroll) {
   }else{
     $("#nav-wrapper").css("background-color", "transparent");
     $("#logo-container-1").css("background-color", "transparent");
-    $(".nav-link-1").css("color", "white");
+    $(".nav-link-1").css("color", origin_nav_color);
   }
 }
 
@@ -27,6 +34,8 @@ function update_side_fix(scroll) {
   
 }
 $(document).ready(function(){
+  origin_nav_color = id_map[$('.image-full').attr("id")];
+  console.log(origin_nav_color)
   // Add smooth scrolling to all links
   $("a").on('click', function(event) {
     // Make sure this.hash has a value before overriding default behavior
@@ -53,7 +62,7 @@ $(document).ready(function(){
     console.log(scroll);
     //update basic style
     update_side_fix(scroll);
-    update_bar(scroll);
+    update_bar(scroll, origin_nav_color);
     //redirect section
     if(scroll < 1500 && cur != "#fl-1") {
       update_cur("#fl-1");

@@ -1,0 +1,198 @@
+{% extends "CloudFantasy/baseWithNav.html" %}
+
+
+{% block title %}
+Films | CloudFantasy
+{% endblock %}
+
+{% block stylesheet%}
+{% load staticfiles %}
+	<link type="text/css" rel="stylesheet" href="{% static 'CloudFantasy/css/films.css' %}">
+	<script src="{% static 'CloudFantasy/js/scroll-film.js' %}"></script>
+{% endblock%}
+
+{% block content%}
+<div id="film3" class="image-full" style="background-image: url('{% static "CloudFantasy/images/film/film3/film3.png" %}');">
+	<div class="film-slider">
+		<p class="film-slider-p">>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="film-pg-redirect" href="/film4">Mood Indigo</a></p>
+		<p class="film-slider-p"><&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="film-pg-redirect" href="/film2">The Science of Sleep</a></p>
+	</div>
+</div>
+
+<div id="float-nav">
+	<div class="fl-row row cur_sec" id="fl-1">
+		<div class="fl-sec" id="fl-sec-1">
+			<a href="#story"> The&nbsp;Story</a>
+		</div>
+	</div>
+	<div class="fl-row row" id="fl-2">
+		<div class="fl-sec" id="fl-sec-2">
+			<a href="#cast"> Main&nbsp;Cast</a>
+		</div>
+	</div>
+	<div class="fl-row row" id="fl-3">
+		<div class="fl-sec" id="fl-sec-3">
+			<a href="#review"> Reviews</a>
+		</div>
+	</div>
+</div>
+
+
+<div class="film-story row" >
+	<div class="col-md-4 story-left-col">
+		<p class="story-left-top">
+			“The past belongs to us,  and we can change it.”
+		</p>
+		<div class="story-img-wrapper">
+			<img src="{% static 'CloudFantasy/images/film/film3/film3-story-left-top.png' %}">
+		</div>
+	</div>
+	<div class="col-md-4 story-mid-col">
+		<p class="story-title">
+			The Story
+		</p>
+		<p class="story-p">
+			In Passaic, New Jersey, Mr. Fletcher (Danny Glover) owns an old VHS Be Kind Rewind Video Store in a condemned building, where he works with his stepson Mike (Yasiin Bey). Mr. Fletcher is proud of his building and indicates that Thomas Wright “Fats” Waller was born there. Yet the City Hall wants to relocate the store and demolish the building. Mr. Fletcher needs to travel and advises Mike to keep his dysfunctional friend Jerry (Jack Black) out of the store. Jerry thinks  of a conspiracy theory against the machines and decides to sabotage the power plant. He inadvertently has an accident and gets magnetized. When Jerry visits Mike in the video store, he accidentally erases all the tapes. Meanwhile, Mr. Fletcher’s friend Miss Falewicz comes to the video store to check over and rent “Ghostbusters”. Jerry and Mike decide to hide the accident and remake the film by themselves. 
+		</p>
+	</div>
+	<div class="col-md-4 story-right-col">
+		<div class="story-sm-float" id="story">
+			Gondry’s delightful ode to handmade DIY craftsmanship at it’s finest
+		</div>
+		<p class="story-p">
+			Words spread from Miss Falewicz’s nephew of the inadvertently hilarious results of Mike and Jerry’s filming, and soon the store is seeing more requests for such movies. Mike, Jerry, and Alma quickly pass off the movies as being “sweded”, insisting the films came from Sweden and thus able to demand long wait times and higher costs for the rental.
+		</p>
+		<p class="story-p">
+			Mike and Jerry enlist the locals to help out in making the films and use them as starring roles in their films. When Mr. Fletcher returns, intent on converting the store to a DVD rental outlet, he quickly recognizes that they are making more money from the sweded films than from normal rentals, and joins in with the process. However, the success is put to a halt when two court bailiffs arrive, insisting that the sweded films are copyright violations, and seize the tapes and the store’s assets, crushing the tapes with a steamroller. Without money to renovate the building, Mr. Fletcher is finally forced to reveal to Mike that he made up the relationship between Fats Waller and their building. Mr. Fletcher is given only a week to evacuate the building before it’ll be razed.
+		</p>
+	</div>
+</div>
+
+<div class="cast-row row">
+	<div class="col-md-4 story-left-col">
+		<div class="cast-note-wrapper">
+			<img src="{% static 'CloudFantasy/images/film/film3/film3-note.png' %}">
+		</div>
+	</div>
+	<div class="col-md-4 cast-md-col">
+		<p class="cast-title" id="cast">
+			Main Cast
+		</p>
+		<div class="cast-pic-row row">
+			<div class="col-md-6">
+				<div class="cast-img-wrapper">
+					<img src="{% static 'CloudFantasy/images/film/film3/film3-cast-1.png' %}">
+				</div>
+				<p class="cast-name">Jack Black</p>
+				<p class="cast-role">Jerry</p>
+
+				<div class="cast-img-wrapper cast-hidden">
+					<img src="{% static 'CloudFantasy/images/film/film3/film3-cast-1.png' %}">
+				</div>
+				<p class="cast-name cast-hidden">Romain Duris</p>
+				<p class="cast-role cast-hidden">Colin</p>
+			</div>
+			<div class="col-md-6">
+				<div class="cast-img-wrapper">
+					<img src="{% static 'CloudFantasy/images/film/film3/film3-cast-2.png' %}">
+				</div>
+				<p class="cast-name">Mos Def</p>
+				<p class="cast-role">Mike</p>
+				<div class="cast-blank"></div>
+				<div class="cast-img-wrapper">
+					<img src="{% static 'CloudFantasy/images/film/film3/film3-cast-3.png' %}">
+				</div>
+				<p class="cast-name">Mia Farrow</p>
+				<p class="cast-role">Miss Falewicz</p>
+			</div>
+		</div>
+	</div>
+	<div class="col-md-4 cast-right-col">
+		<div class="cast-pic-row row">
+			<div class="col-md-6">
+				<div class="cast-img-wrapper">
+					<img src="{% static 'CloudFantasy/images/film/film3/film3-cast-4.png' %}">
+				</div>
+				<p class="cast-name">Danny Glover</p>
+				<p class="cast-role">Mr. Fletcher</p>
+
+				<div class="cast-img-wrapper">
+					<img src="{% static 'CloudFantasy/images/film/film3/film3-cast-5.png' %}">
+				</div>
+				<p class="cast-name">Melonie Diaz</p>
+				<p class="cast-role">Alma</p>
+			</div>
+			<div class="col-md-6">
+				<div class="cast-img-wrapper cast-hidden">
+					<img src="{% static 'CloudFantasy/images/film/film3/film3-cast-2.png' %}">
+				</div>
+				<p class="cast-name cast-hidden">Audrey Tautou</p>
+				<p class="cast-role cast-hidden">Chloé</p>
+
+				<div class="cast-img-wrapper">
+					<img src="{% static 'CloudFantasy/images/film/film3/film3-cast-6.png' %}">
+				</div>
+				<p class="cast-name">Arjay Smith</p>
+				<p class="cast-role">Manny</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="ppt-row">
+	<div class="ppt-title">
+		<p class="ppt-title-lg" id="review">
+			“A film that’s sweet and well-intentioned, but with a heart where its brain should be.”
+		</p>
+		<p class="ppt-title-name">
+			<span class="span-bold">—David Gritten |</span> The Guardian</p>
+	</div>
+	<div class="ppt-sec-row row">
+		<div class="col-md-4 cast-hidden">.</div>
+		<div class="col-md-4 ppt-mid-col">
+			<p class="ppt-sec-name">
+				Dana Stevens | Slate
+			</p>
+			<p class="ppt-sec-desc">
+				It’s hard to get too cranky about a movie that, at heart, is a tribute to the joy of making things with your friends.
+			</p>
+
+			<p class="ppt-sec-name">
+				Rob Gonsalves | eFilmCritic.com
+			</p>
+			<p class="ppt-sec-desc">
+				A glowing valentine to creativity in opposition to commerce.
+			</p>
+
+			<p class="ppt-sec-name">
+				Troy Patterson | Spin
+			</p>
+			<p class="ppt-sec-desc">
+				Gondry connects the guys’ toil and glee with a kind of old-time neighborhood hominess that’s dying away and a jazzed creative joy that never will.
+			</p>
+		</div>
+		<div class="col-md-4 ppt-right-col">
+			<p class="ppt-sec-name">
+				Peter Bradshaw | The Guardian
+			</p>
+			<p class="ppt-sec-desc">
+				Hollywood showbiz is about the now and the new, so there is something subversive about Gondry pitching his tent in the wasteground of obsolescence behind the gleaming edifice of modernity.
+			</p>
+
+			<p class="ppt-sec-name">
+				Karina Montgomery | Cinerina
+			</p>
+			<p class="ppt-sec-desc">
+				A surprisingly quiet and whimsical comedy about a ridiculous and unlikely series of events that turns into a nearly-as-likely miracle. Best bit: the film’s own Sweded preview.
+			</p>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+{% endblock%}

@@ -11,6 +11,9 @@
 .nav-link-1:hover{
 	color: white;
 }
+.dk, .dk:hover{
+	color: #2d6466;
+}
 
 /*floating nav sev*/
 #float-nav{
@@ -71,6 +74,17 @@
 	color: #f1f3f0;
 	opacity: 0.8;
 }
+.film-pg-redirect{
+	text-decoration: none;
+	color: white;
+	cursor: pointer;
+}
+.film-pg-redirect:hover{
+	text-decoration: none;
+	color: white;
+	cursor: pointer;
+	font-weight: 500;
+}
 
 
 /*film story*/
@@ -116,7 +130,7 @@
 	font-weight: 300;
 	font-style: normal;
 	font-size: 14px;
-	width: 40%;
+	width: 45%;
 	padding: 0 0 200px 0;
 }
 .story-right-col{
@@ -219,7 +233,7 @@
 }
 .ppt-sec-row{
 	margin-right: 10%;
-	margin-bottom: 300px;
+	/*margin-bottom: 300px;*/
 }
 .ppt-mid-col{
 	padding: 80px 1% 0 4%;
