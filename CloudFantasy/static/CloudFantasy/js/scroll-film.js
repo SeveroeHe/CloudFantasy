@@ -4,6 +4,7 @@ var id_map = {
   "film2" : "white",
   "film3" : "white",
   "film4" : "white",
+  "film5" : "white"
 }
 var origin_nav_color = null;
 

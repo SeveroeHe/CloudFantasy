@@ -18,7 +18,13 @@ from django.db.models import Q
 Home Page
 '''
 def home(request):
-	return render(request, 'CloudFantasy/home.html', {})
+	context = {}
+	if not "visited" in request.session:
+		request.session["visited"] = True
+		context["visited"] = "pop-up-display"
+	else:
+		context["visited"] = "pop-up-hide"
+	return render(request, 'CloudFantasy/home.html', context)
 
 def director(request):
 	return render(request, 'CloudFantasy/director.html', {'cur1':'cur_page'})
