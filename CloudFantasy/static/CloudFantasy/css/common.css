@@ -101,11 +101,12 @@ img{
 	position: absolute;
 }
 .pop-up-wrapper{
-	margin: 300px auto 0 auto;
+	margin: 200px auto 0 auto;
 	width: 40%;
 	background-color: white;
-	height: 400px;
-	border-radius: 20px;
+	/*height: 400px;*/
+	padding-bottom: 50px; 
+	/*background-color: rgba(255,255,255,0.5);*/
 }
 .pop-up-text-wrapper{
 }
@@ -146,7 +147,6 @@ img{
 	font-style: normal;
 	font-size: 20px;
 	color: white;
-	border-radius: 20px;
 	padding: 10px;
 	text-align: center;
 	cursor: pointer;

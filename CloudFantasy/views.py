@@ -23,7 +23,8 @@ def home(request):
 		request.session["visited"] = True
 		context["visited"] = "pop-up-display"
 	else:
-		context["visited"] = "pop-up-hide"
+		# context["visited"] = "pop-up-hide"
+		context["visited"] = "pop-up-display"
 	return render(request, 'CloudFantasy/home.html', context)
 
 def director(request):
