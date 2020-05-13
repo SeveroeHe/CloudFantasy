@@ -28,5 +28,6 @@ urlpatterns = [
     url(r'^film2$', views.film2, name = 'film2'), # film page
     url(r'^film3$', views.film3, name = 'film3'), # film page
     url(r'^film4$', views.film4, name = 'film4'), # film page
-    url(r'^film5$', views.film5, name = 'film5') # film page
+    url(r'^film5$', views.film5, name = 'film5'), # film page
+    url(r'^behindTheScene$', views.bts, name = 'bts') # btspage
 ]

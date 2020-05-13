@@ -54,3 +54,6 @@ def film4(request):
 def film5(request):
 	return render(request, 'CloudFantasy/film5.html', {'cur2':'cur_page'})
 
+def bts(request):
+	return render(request, 'CloudFantasy/bts.html', {'cur5':'cur_page'})
+

@@ -1,0 +1,227 @@
+{% extends "CloudFantasy/baseWithNavWhite.html" %}
+
+{% block title %}
+Films | CloudFantasy
+{% endblock %}
+
+{% block stylesheet%}
+{% load staticfiles %}
+	<link type="text/css" rel="stylesheet" href="{% static 'CloudFantasy/css/bts.css' %}">
+	<script src="{% static 'CloudFantasy/js/scroll-bts.js' %}"></script>
+{% endblock%}
+
+{% block content%}
+<div id="main" class="image-full" style="background-image: url('{% static "CloudFantasy/images/bts/main1.png" %}');"></div>
+<div class="img-wall">
+	<a href="/film1" class="img-cell"><img src="{% static 'CloudFantasy/images/bts/cell1.png' %}"></a>
+	<a href="/film2" class="img-cell"><img src="{% static 'CloudFantasy/images/bts/cell2.png' %}"></a>
+	<a href="/film3" class="img-cell"><img src="{% static 'CloudFantasy/images/bts/cell3.png' %}"></a>
+	<a href="/film4" class="img-cell"><img src="{% static 'CloudFantasy/images/bts/cell4.png' %}"></a>
+	<a href="/film5" class="img-cell"><img src="{% static 'CloudFantasy/images/bts/cell5.png' %}"></a>
+</div>
+
+<div class="three-main row">
+	<div class="col-md-4 main-cell db-1">
+		<p class="main-cell-title">Festival Name</p>
+		<p class="main-cell-p">
+			The Cloud of Fantasy: Wandering between mundane realities and marvelous reveries in the films of Michel Gondry.
+		</p>
+		<p class="main-cell-title">Festival Positioning</p>
+		<p class="main-cell-p">
+			Wandering between dreams and realities is a recurring theme in Michel Gondry’s films. Gondry once said in an interview that “I live constantly with my dreams. They’re part of my memories at the same level as my waking experience.” The goal of the festival is to commemorate the 20th anniversary since Michel Gondry’s directorial debut and celebrate his creativity that surrounds his film-making career.
+		</p>
+	</div>
+	<div class="col-md-4 main-cell db-2">
+		<p class="main-section-title">Design Brief</p>
+		<p class="main-cell-title">Dates</p>
+		<p class="main-cell-p bold-italic-ms">2021.05.18–2021.05.22 |</p>
+		<p class="main-cell-p">
+			05.18 marks the directorial debut of Michel Gondry at the 54th Cannes International Film Festival and 2021 marks the 20th anniversary of his film-making career
+		</p>
+		<p class="main-cell-title">Locations</p>
+		<p class="main-cell-p bold-italic-ms">Opening Gala | Video Vortex, Brooklyn</p>
+		<p class="main-cell-p">
+			Gondry talked about how he finds inspiration in video stores. Video Vortex is a chain store by the Alamo Drafthouse that unearths obscure and bizarre movies.
+		</p>
+		<p class="main-cell-p bold-italic-ms">Film Festival Venue | The Alamo Drafthouse</p>
+		<p class="main-cell-p">
+			The Alamo Drafthouse strives to show the greatest films ever made and spread the film culture to every corner of the world. The combination of Alamo Drafthouse and Video Vortex will be ideal to offer guests with both inspiration and convenience.
+		</p>
+		<p class="main-cell-p bold-italic-ms">Special Events | 15 Orient Gallery</p>
+		<p class="main-cell-p">
+			This venue is owned by Michel Gondry and repurposed into an exhibition space with a flair of Phantasmagoria
+		</p>
+	</div>
+	<div class="col-md-4 main-cell db-3">
+		<p class="main-cell-floating">
+			The basic information about the festival
+		</p>
+		<p class="main-cell-title">Special Events</p>
+		<p class="main-cell-p bold-italic-ms">Gondry’s 20 Music Videos | </p>
+		<p class="main-cell-p">
+			To Gondry, the creative freedom offered by music videos provides an outlet for his unfettered imagination, enabling him to experiment and fine tune a remarkable talent. 
+		</p>
+		<p class="main-cell-p bold-italic-ms">Mini “Home Movie Factory” | </p>
+		<p class="main-cell-p">
+			The “Home Movie Factory” is an interactive exhibition in which a group of approximately ten people takes on the task of writing a script, casting, and filming, all within a three-hour period. 
+		</p>
+		<p class="main-cell-p bold-italic-ms">Gondry’s Drawings and Props | </p>
+		<p class="main-cell-p">
+			The exhibition will present some original drawings and props used in Michel Gondry’s films, such as sketches of his latest work “Is the Man who is Tall Happy?”, the mysterious cuisine from Mood Indigo, and the time machine from The Science of Sleep. 
+		</p>
+	</div>
+</div>
+
+<div class="three-main row">
+	<div class="col-md-4 main-cell pd-1">
+		<img src="{% static 'CloudFantasy/images/bts/pd.png' %}">
+	</div>
+	<div class="col-md-4 main-cell">
+		<p class="main-section-title">Plot Diagram</p>
+	</div>
+	<div class="col-md-4 main-cell">
+		<p class="main-cell-floating">
+			Summary of the major themes and narratives of Gondry’s films
+		</p>
+		<p class="main-cell-p bold-italic-ms">A: The Beginning</p>
+		<p class="main-cell-p">
+			Started out as an average person living a mundane life
+		</p>
+		<p class="main-cell-p bold-italic-ms">B: A Small Victory (the Turning Point)</p>
+		<p class="main-cell-p">
+			Reached a certain degree of climax by winning the love of their lives or achieving a small goal
+		</p>
+		<p class="main-cell-p bold-italic-ms">C: The Continuous Fall</p>
+		<p class="main-cell-p">
+			Went downhill and took risky and inventive attempts to change their fate
+		</p>
+		<p class="main-cell-p bold-italic-ms">D: The Unchanged Destiny</p>
+		<p class="main-cell-p">
+			Most likely remained the same or even continue to fall as the efforts were often to no avail 
+		</p>
+		<p class="main-cell-p bold-italic-ms">E: The Utopia in the Dreams</p>
+		<p class="main-cell-p">
+			Created a new sort of reality in the dreams and imagination
+		</p>
+	</div>
+</div>
+
+<div class="three-main row">
+	<div class="col-md-4 main-cell lgt-1">
+		<img src="{% static 'CloudFantasy/images/bts/lgt.png' %}">
+	</div>
+	<div class="col-md-4 main-cell">
+		<p class="main-section-title">Logotype</p>
+	</div>
+	<div class="col-md-4 main-cell">
+	</div>
+</div>
+
+<div class="three-main row">
+	<div class="col-md-4 main-cell ele-1">
+		<p class="main-cell-title">Typefaces</p>
+		<img src="{% static 'CloudFantasy/images/bts/ele1.png' %}">
+	</div>
+	<div class="col-md-4 main-cell ele-2">
+		<p class="main-section-title">Visual Elements</p>
+		<p class="main-cell-title">Colors</p>
+		<img src="{% static 'CloudFantasy/images/bts/ele2.png' %}">
+	</div>
+	<div class="col-md-4 main-cell ele-3">
+		<p class="main-cell-title">Graphic Elements</p>
+		<p class="main-cell-p">
+			I created a small set of thin, organic brush strokes to add some interests and a sense of creativity in the organized mundane world. 
+		</p>
+		<p class="main-cell-p">
+			I also made texture for my catalog that mimics the shabby notebook paper which reflects the boring and tedious office life.
+		</p>
+		<img src="{% static 'CloudFantasy/images/bts/ele3.png' %}">
+	</div>
+</div>
+
+<div class="three-main row">
+	<div class="col-md-4 main-cell ih-1">
+		<p class="main-cell-title">Level One</p>
+		<p class="main-cell-p">
+			Level one images are used as the main visual demonstration of the subject and the style of the festival. They are applied to posters, covers, ads, with only titles and important information on them.
+		</p>
+		<img src="{% static 'CloudFantasy/images/bts/ih-1.png' %}">
+	</div>
+	<div class="col-md-4 main-cell ih-2">
+		<p class="main-section-title">Image Hierarchy</p>
+		<p class="main-cell-title">Level Two</p>
+		<p class="main-cell-p">
+			Level two images are secondary and more abstract. They’re used for chapter openers, backgrounds for quotes, etc. 
+		</p>
+		<img src="{% static 'CloudFantasy/images/bts/ih-2.png' %}">
+	</div>
+	<div class="col-md-4 main-cell ih-3">
+		<p class="main-cell-floating">
+			A collection of self generated images of different levels that are applied to the project
+		</p>
+		<p class="main-cell-title">Level Three</p>
+		<p class="main-cell-p">
+			Level three images are the most abstract and are suitable for layering large amount of text and detailed information. 
+		</p>
+		<img src="{% static 'CloudFantasy/images/bts/ih-3.png' %}">
+	</div>
+</div>
+
+<div class="three-main row">
+	<div class="col-md-4 main-cell it-1">
+	</div>
+	<div class="col-md-4 main-cell it-2">
+		<p class="main-section-title">Image Treatments</p>
+		<p class="main-cell-title">Film Images</p>
+		<p class="main-cell-p">
+			The film images are the ones that are directly related to the films and not created by myself (e.g. images of Gondry and his team, movie stills, etc.). Since Gondry doesn’t have a very unified tone or filter to his films, I slightly adjusted the photos to make them match as a set.
+		</p>
+		<img src="{% static 'CloudFantasy/images/bts/it-2.png' %}">
+	</div>
+	<div class="col-md-4 main-cell it-3">
+		<p class="main-cell-floating">
+			Consistent ways of treating images and separating the photos into film-relevant and festival-specific ones.
+		</p>
+		<p class="main-cell-title">Festival Images </p>
+		<p class="main-cell-p">
+			The festival images are what I created for showing the subject and style of my film festival. In order to make them more distinct from the film photos and add some fantasy elements to the old boring office, I added a layer of light leaks to all these photos.
+		</p>
+		<img src="{% static 'CloudFantasy/images/bts/it-3.png' %}">
+	</div>
+</div>
+
+<div class="three-main row">
+	<div class="col-md-4 main-cell ill-1">
+		<p class="main-cell-title">Examples of Gondry's Work</p>
+		<img src="{% static 'CloudFantasy/images/bts/ill-1.png' %}">
+	</div>
+	<div class="col-md-4 main-cell ill-2">
+		<p class="main-section-title">Illustrations</p>
+		<p class="main-cell-p">
+			Animation and illustration are important in Gondry’s work. Adding some uniquely designed illustrations will help show some of Gondry’s spirits and create a sense of imagination that matches the “fantasy” motif of the film festival. 
+		</p>
+		<p class="main-cell-title">Examples of My Illustrations</p>
+		<img src="{% static 'CloudFantasy/images/bts/ill-2.png' %}">
+	</div>
+	<div class="col-md-4 main-cell ill-3">
+		<p class="main-cell-floating">
+			A set of illustrations created for the project to match Gondry’s visual style and add excitement to the mundane office images  
+		</p>
+		<p class="main-cell-p">
+			By looking at Gondry’s animation work, I realized that although his styles vary, the subject matters are all full of interesting, weird, adventurous creations. I therefore commissioned two illustrators to create the illustrations accordingly.
+		</p>
+		<div class="ill-div-2 row">
+			<div class="col-md-6">
+				<img src="{% static 'CloudFantasy/images/bts/ill-3.png' %}">
+			</div>
+			<div class="col-md-6">
+				<p class="main-cell-title">Illustrators </p>
+				<p class="main-cell-p mcp-special">Wanran Ding</p>
+				<p class="main-cell-p">Kevin Wang</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="empty-intent"></div>
+{% endblock%}

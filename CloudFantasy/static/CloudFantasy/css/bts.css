@@ -1,0 +1,148 @@
+
+/*front page */
+.image-full{
+	height: 100%; 
+	/*min-height: 900px;*/
+	min-width: 500px !important;
+	/* Center and scale the image nicely */
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+#nav-wrapper{
+	background-color: transparent;
+}
+#logo-container-1{
+	background-color: transparent;	
+}
+#logo-white{
+	display: block;
+}
+#logo-black{
+	display: none;
+}
+
+
+/*img wall*/
+.img-wall{
+	width: 100%;
+}
+.img-cell{
+	width: 20%;
+	display: inline-block;
+	text-decoration: none;
+	margin: 0 -2px;
+}
+.img-cell>img{
+	width: 100%;
+}
+
+/*framework structure*/
+.three-main, .main-cell{
+	/*border: 1px solid red;*/
+}
+.three-main{
+	margin: 150px 10% 0 10%;
+}
+.main-cell-title{
+	font-family: din-2014, sans-serif;
+	font-weight: 600;
+	font-style: normal;
+	color: #db6659;
+	margin-bottom: 0;
+}
+.main-cell-p{
+	font-family: din-2014, sans-serif;
+	font-style: normal;
+}
+.main-section-title{
+	font-family: ArcherOffice;
+	font-size: 50px;
+	color: #2d6466;
+	padding: 150px 0 60px 0;
+	white-space: nowrap;
+}
+.main-cell-floating{
+	color: #db6659;
+	font-family: din-2014, sans-serif;
+	font-weight: 300;
+	font-style: normal;
+	font-size: 14px;
+	width: 45%;
+	min-height: 286px;
+}
+.bold-italic-ms{
+	margin-bottom: 0;
+	font-weight: 600;
+}
+
+
+/*extra styles*/
+.db-1{
+	padding-top: 300px;
+}
+
+
+.pd-1{
+	padding-top: 300px;
+}
+.pd-1>img{
+	width: 200%;
+}
+
+
+.lgt-1{
+	padding-top: 300px;
+}
+.lgt-1>img{
+	width: 360%;
+}
+
+.ele-1, .ele-3{
+	padding-top: 300px;
+}
+.ele-1>img, .ele-2>img, .ele-3>img{
+	width: 100%;
+}
+
+
+.ih-1>img, .ih-2>img, .ih-3>img{
+	width: 100%;
+}
+.ih-1{
+	padding-top: 300px;
+}
+.ih-1>.main-cell-p, .ih-2>.main-cell-p, .ih-3>.main-cell-p{
+	min-height: 150px;
+}
+
+
+.it-2>img, .it-3>img{
+	width: 100%;
+}
+.it-2>.main-cell-p, .it-3>.main-cell-p{
+	min-height: 200px;
+}
+
+
+.ill-1>img, .ill-2>img{
+	width: 100%;
+	padding-top:10px;
+}
+.ill-div-2>.col-md-6>img{
+	width: 100%;
+	padding-top:30px;
+}
+.ill-1{
+	padding-top: 465px;
+}
+.ill-2>.main-cell-p, .ill-3>.main-cell-p{
+	min-height: 150px;
+}
+.mcp-special{
+	margin-bottom: 0;
+}
+
+.empty-intent{
+	height: 300px;
+}
