@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
     {% load staticfiles %}
 <!--     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
+    <link rel="shortcut icon" href="{% static 'CloudFantasy/images/icon-sm.png' %}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="{% static 'CloudFantasy/css/bootstrap.css' %}" type="text/css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -27,11 +28,12 @@
 <div id="pop-up-fst" class="{{visited}}">
     <div class="pop-up-wrapper">
         <div class="pop-up-text-wrapper">
-            <div class="pop-up-x" onclick="close_pop()">x</div>
+            <div class="pop-up-x" onclick="close_pop()">
+                <img src="{% static 'CloudFantasy/images/close.png' %}">
+            </div>
             <div class="pop-up-title">Welcome !</div>
             <div class="pop-up-text">
-                <p>This is a student project created for academic purposes.</p>
-                <p>This rebrand concept is a fictional piece of work made as part of a branding class's assignment</p>
+                <p>The Cloud of Fantasy is a film festival project created by Ellie Chen at the Academy of Art University for academic purpose only.</p>
             </div>
             <div class="pop-up-agree" onclick="close_pop()">I Understand</div>
         </div>

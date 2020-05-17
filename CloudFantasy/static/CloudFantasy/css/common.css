@@ -97,10 +97,9 @@ img{
 #pop-up-fst{
 	width: 100%;
 	height: 100%;
-	background-color: rgba(0,0,0,0.5);
+	background-color: rgba(237,238,235,0.5);
 	z-index: 30;
 	position: absolute;
-	display: none;
 }
 .pop-up-wrapper{
 	margin: 200px auto 0 auto;
@@ -120,6 +119,9 @@ img{
 	width: 10%;
 	margin-left: 90%;
 	cursor: pointer;
+}
+.pop-up-x>img{
+	width: 50%;
 }
 .pop-up-title{
 	font-family: ArcherOffice;
@@ -159,4 +161,13 @@ img{
 .pop-up-hide{
 	display: none;
 }
+
+
+footer{
+	padding: 50px 0;
+	font-family: din-2014, sans-serif;
+	font-weight: 300;
+	font-style: normal;
+}
+
 

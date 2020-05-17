@@ -1,7 +1,7 @@
 {% extends "CloudFantasy/baseWithNavWhite.html" %}
 
 {% block title %}
-Films | CloudFantasy
+Behind&nbsp;the&nbsp;scenes | CloudFantasy
 {% endblock %}
 
 {% block stylesheet%}
@@ -12,11 +12,13 @@ Films | CloudFantasy
 {% endblock%}
 
 {% block content%}
-<div id="gallery-close" onclick="gallery_close()">x</div>
+<div id="gallery-close" onclick="gallery_close()">
+	<img src="{% static 'CloudFantasy/images/close.png' %}">
+</div>
 <div id="gallery" class="row">
 	<div class="col-md-1 gallery-pt-div" onclick="update('prev')">
 		<div class="gallery-pt-wrapper">
-			<img class="gallery-pt" src="{% static 'CloudFantasy/images/bts/prev.png' %}">
+			<img class="gallery-pt" src="{% static 'CloudFantasy/images/prev.png' %}">
 		</div>
 	</div>
 	<div class="col-md-10">
@@ -24,7 +26,7 @@ Films | CloudFantasy
 	</div>
 	<div class="col-md-1 gallery-pt-div" onclick="update('nxt')">
 		<div class="gallery-pt-wrapper">
-			<img class="gallery-pt" src="{% static 'CloudFantasy/images/bts/nxt.png' %}">
+			<img class="gallery-pt" src="{% static 'CloudFantasy/images/nxt.png' %}">
 		</div>
 	</div>
 </div>
@@ -365,7 +367,7 @@ Films | CloudFantasy
 	</div>
 </div>
 
-<div class="three-main row">
+<div class="three-main row" style="margin-top: -80px;">
 	<div class="col-md-4 main-cell">
 	</div>
 	<div class="col-md-4 main-cell fi-2 fi">
@@ -385,5 +387,5 @@ Films | CloudFantasy
 		<img src="{% static 'CloudFantasy/images/bts/fi-2.png' %}">
 	</div>
 </div>
-<div class="empty-intent"></div>
+<!-- <div class="empty-intent"></div> -->
 {% endblock%}

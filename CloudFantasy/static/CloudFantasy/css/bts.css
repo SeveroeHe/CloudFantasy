@@ -211,8 +211,8 @@
 #gallery-close{
 	position: fixed;
 	z-index: 19;
-	width: 60px;
-	height: 60px;
+	width: 100px;
+	height: 100px;
 	margin-top: 120px;
 	font-size: 36px;
 	/*border: 1px solid red;*/
@@ -220,6 +220,9 @@
 	text-align: center;
 	visibility: hidden;
 	cursor: pointer;
+}
+#gallery-close>img{
+	width: 30%;
 }
 #gallery>div{
 	/*border: 1px solid red;*/
@@ -236,7 +239,7 @@
 }
 .gallery-pt-wrapper{
 	/*border: 1px solid red;*/
-	margin-top: 240px;
+	margin-top: 300px;
 }
 .gallery-pt-div{
 	cursor: pointer;	
