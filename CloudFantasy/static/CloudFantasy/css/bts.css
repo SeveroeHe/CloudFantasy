@@ -168,8 +168,6 @@
 	width: 550%;
 }
 
-
-
 /*finnal delivery*/
 .fd-img-wrapper{
 	padding: 20px 0 80px 0;
@@ -187,8 +185,16 @@
 	object-fit: cover;
 }
 
-
-
+/*further information*/
+.fi>img{
+	width: 100%;
+}
+.fi>.main-cell-title{
+	padding: 20px 0 40px 0;
+}
+.fi, .fi>.main-section-title{
+	/*border: 1px solid red;*/
+}
 
 /*gallery*/
 #gallery{
@@ -199,7 +205,7 @@
 	height: 100%;
 	margin: 0;
 	/*border: 1px solid red;*/
-	padding: 200px 10% 100px 10%;
+	padding: 100px 10% 100px 10%;
 	visibility: hidden;
 }
 #gallery-close{
@@ -220,7 +226,7 @@
 }
 #gallery-img{
 	width: 100%;
-	height: 500px;
+	height: 600px;
 	object-fit: cover;
 }
 .gallery-pt{
