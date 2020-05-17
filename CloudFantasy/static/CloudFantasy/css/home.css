@@ -1,4 +1,3 @@
-
 /*background image*/
 .image-full{
   /* The image used */
@@ -14,19 +13,24 @@
 
 }
 
-.nav-bar{
-	position: absolute;
-	/*border: 1px solid yellow;*/
-	margin: 0px 0 0 20%;
-	min-width: 900px;
+#main-nav-wrapper{
+	width: 100%;
+	/*background-color: #f1f3f0;*/
+	z-index: 19;
+	position: fixed;
+	height: 120px;
+	/*border: 1px solid red;*/
 }
-.nav-bar>div{
-	/*border: 1px solid yellow;*/
-	/*min-width: 100px;*/
+.nav-bar{
+	position: fixed;
+	/*border: 1px solid red;*/
+	margin: 0px 10% 0 21%;
+	min-width: 900px;
+	z-index: 21;
 }
 .nav-col{
 	text-align: left;
-	margin-top: 40px;
+	margin-top: 45px;
 	padding: 0 3%;
 	width: 20%;
 	/*text style*/
@@ -38,26 +42,30 @@
 	font-family: din-condensed, sans-serif;
 	font-weight: 200;
 	font-style: normal;
-
+	/*border: 1px solid red;*/
+	z-index: 10;
 	/*chosen diff showing diff style*/
 
 }
-.nav-link{
+.nav-link-0{
 	color: white !important;
     text-decoration: none !important;
 }
-.nav-link:hover{
+.nav-link-0:hover{
 	font-weight: 400;
 	font-style: normal;
 }
 
 #logo-container{
 	margin: 40px 5% 0 10%;
-	position: absolute;
+	position: fixed;
+	padding-right: 5px;
 }
 #logo-container>img{
 	width: 10%;
 }
+
+
 
 
 

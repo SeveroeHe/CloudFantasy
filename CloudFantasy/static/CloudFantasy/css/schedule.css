@@ -52,7 +52,7 @@
 }
 
 .title-1{
-	font-family: din-2014, sans-serif;
+	font-family: ArcherOffice;
 	font-weight: 400;
 	font-style: normal;
 	font-size: 36px;
@@ -61,7 +61,7 @@
 }
 .title-2{
 	margin: -20px 0 37px 0;
-	font-family: din-2014, sans-serif;
+	font-family: ArcherOffice;
 	font-weight: 400;
 	font-style: normal;
 	font-size: 36px;
@@ -69,6 +69,7 @@
 }
 .year{
 	font-weight: 100;
+	opacity: 0;
 }
 .theme{
 	font-family: din-2014, sans-serif;

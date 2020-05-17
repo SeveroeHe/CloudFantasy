@@ -11,17 +11,22 @@ Home | CloudFantasy
 {% endblock%}
 
 {% block content%}
+<div id="main-nav-wrapper">
+    <div id="logo-container">
+        <a class="nav-link-0" href="/" style="opacity: 0;">
+            <img src="{% static 'CloudFantasy/images/logo.png' %}">
+        </a>
+    </div>
+    <div class="nav-bar-1 row">
+        <div class="col-xs-6 nav-col-1"><a class="nav-link-0 {{dk}}" href="/director" >director</a></div>
+        <div class="col-xs-6 nav-col-1"><a class="nav-link-0 {{dk}}" href="/films" >films</a></div>
+        <div class="col-xs-6 nav-col-1"><a class="nav-link-0 {{dk}}" href="/schedule" >schedule</a></div>
+        <div class="col-xs-6 nav-col-1"><a class="nav-link-0 {{dk}}" href="/tickets" >tickets</a></div>
+        <div class="col-xs-6 nav-col-1"><a class="nav-link-0 {{dk}}" href="/behindTheScene">Behind&nbsp;the&nbsp;scenes</a></div>
+    </div>
+</div>
+
 <div class="image-full" style="background-image: url('{% static "CloudFantasy/images/main/bg.png" %}');">
-	<div id="logo-container">
-		<img src="{% static 'CloudFantasy/images/logo.png' %}" style="display: none;">
-	</div>
-	<div class="nav-bar row">
-		<div class="col-xs-6 nav-col"><a class="nav-link" href="/director" >director</a></div>
-		<div class="col-xs-6 nav-col"><a class="nav-link" href="/films" >films</a></div>
-		<div class="col-xs-6 nav-col"><a class="nav-link" href="/schedule" >schedule</a></div>
-		<div class="col-xs-6 nav-col"><a class="nav-link" href="/tickets" >tickets</a></div>
-		<div class="col-xs-6 nav-col"><a class="nav-link" href="/behindTheScene" >Behind&nbsp;the&nbsp;scenes</a></div>
-	</div>
 	<div class="main-logo">
 		<img src="{% static 'CloudFantasy/images/main/main.png' %}">
 	</div>

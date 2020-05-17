@@ -91,6 +91,16 @@
 }
 
 
+.md-1{
+	padding-top: 300px;
+}
+.md>.main-cell-title{
+	white-space: nowrap;
+}
+.md-row{
+	margin-bottom: -100px;
+}
+
 .lgt-1{
 	padding-top: 300px;
 }
@@ -161,9 +171,6 @@
 
 
 /*finnal delivery*/
-.fd-1{
-	padding-top: 300px;
-}
 .fd-img-wrapper{
 	padding: 20px 0 80px 0;
 	cursor: pointer;
@@ -171,6 +178,17 @@
 .fd-img-wrapper>img{
 	width: 100%;
 }
+.fd-banner{
+	width: 100%;
+	margin: 0;
+}
+.fd-banner>img{
+	width: 100%;
+	object-fit: cover;
+}
+
+
+
 
 /*gallery*/
 #gallery{
@@ -217,5 +235,7 @@
 .gallery-pt-div{
 	cursor: pointer;	
 }
+
+
 
 

@@ -8,6 +8,7 @@ body, html {
 	z-index: 19;
 	position: fixed;
 	height: 120px;
+	/*border: 1px solid red;*/
 }
 .nav-link-0{
 	text-decoration: none !important;
@@ -99,6 +100,7 @@ img{
 	background-color: rgba(0,0,0,0.5);
 	z-index: 30;
 	position: absolute;
+	display: none;
 }
 .pop-up-wrapper{
 	margin: 200px auto 0 auto;
