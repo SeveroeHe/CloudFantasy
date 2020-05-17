@@ -38,6 +38,7 @@ function update_side_fix(scroll) {
   }
   
 }
+
 $(document).ready(function(){
   origin_nav_color = id_map[$('.image-full').attr("id")];
   console.log(origin_nav_color)

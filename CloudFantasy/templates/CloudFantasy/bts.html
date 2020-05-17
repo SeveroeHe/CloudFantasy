@@ -8,9 +8,26 @@ Films | CloudFantasy
 {% load staticfiles %}
 	<link type="text/css" rel="stylesheet" href="{% static 'CloudFantasy/css/bts.css' %}">
 	<script src="{% static 'CloudFantasy/js/scroll-bts.js' %}"></script>
+	<script src="{% static 'CloudFantasy/js/gallery.js' %}"></script>
 {% endblock%}
 
 {% block content%}
+<div id="gallery-close" onclick="gallery_close()">x</div>
+<div id="gallery" class="row">
+	<div class="col-md-1 gallery-pt-div" onclick="update('prev')">
+		<div class="gallery-pt-wrapper">
+			<img class="gallery-pt" src="{% static 'CloudFantasy/images/bts/prev.png' %}">
+		</div>
+	</div>
+	<div class="col-md-10">
+		<img id="gallery-img" src="">
+	</div>
+	<div class="col-md-1 gallery-pt-div" onclick="update('nxt')">
+		<div class="gallery-pt-wrapper">
+			<img class="gallery-pt" src="{% static 'CloudFantasy/images/bts/nxt.png' %}">
+		</div>
+	</div>
+</div>
 <div id="main" class="image-full" style="background-image: url('{% static "CloudFantasy/images/bts/main1.png" %}');"></div>
 <div class="img-wall">
 	<a href="/film1" class="img-cell"><img src="{% static 'CloudFantasy/images/bts/cell1.png' %}"></a>
@@ -219,6 +236,69 @@ Films | CloudFantasy
 				<p class="main-cell-p mcp-special">Wanran Ding</p>
 				<p class="main-cell-p">Kevin Wang</p>
 			</div>
+		</div>
+	</div>
+</div>
+
+<div class="three-main row">
+	<div class="col-md-4 main-cell pic-wrapper">
+		<img src="{% static 'CloudFantasy/images/bts/ptime.png' %}">
+	</div>
+	<div class="col-md-4 main-cell">
+		<p class="main-section-title">Project Timeline</p>
+	</div>
+	<div class="col-md-4 main-cell">
+		<p class="main-cell-floating">
+			Identifying what should be completed each week to build a robust set of deliverables within the given time
+		</p>
+	</div>
+</div>
+
+<div class="three-main row">
+	<div class="col-md-4 main-cell fd-1">
+		<p class="main-cell-title">Poster</p>
+		<div class="fd-img-wrapper">
+			<img src="{% static 'CloudFantasy/images/bts/fd/deliver1.png' %}">
+		</div>
+		<p class="main-cell-title">DVD Packaging</p>
+		<div class="fd-img-wrapper">
+			<img src="{% static 'CloudFantasy/images/bts/fd/deliver4.png' %}">
+		</div>
+		<p class="main-cell-title">Mobile App</p>
+		<div class="fd-img-wrapper">
+			<img src="{% static 'CloudFantasy/images/bts/fd/deliver6.png' %}">
+		</div>
+	</div>
+	<div class="col-md-4 main-cell">
+		<p class="main-section-title">Final Deliverables</p>
+		<p class="main-cell-title">Catalog</p>
+		<div class="fd-img-wrapper" onclick="gallary('2')">
+			<img src="{% static 'CloudFantasy/images/bts/fd/deliver2.png' %}">
+		</div>
+		<p class="main-cell-title">Website</p>
+		<div class="fd-img-wrapper">
+			<img src="{% static 'CloudFantasy/images/bts/fd/deliver5.png' %}">
+		</div>
+		<p class="main-cell-title">Soundtrack</p>
+		<div class="fd-img-wrapper">
+			<img src="{% static 'CloudFantasy/images/bts/fd/deliver7.png' %}">
+		</div>
+	</div>
+	<div class="col-md-4 main-cell">
+		<p class="main-cell-floating">
+			A set of items developed as the final result of this project
+		</p>
+		<p class="main-cell-title">Advertisements</p>
+		<div class="fd-img-wrapper">
+			<img src="{% static 'CloudFantasy/images/bts/fd/deliver3.png' %}">
+		</div>
+		<p class="main-cell-title">Business System</p>
+		<div class="fd-img-wrapper">
+			<img src="{% static 'CloudFantasy/images/bts/fd/deliver8.png' %}">
+		</div>
+		<p class="main-cell-title">Tickets & Schedule</p>
+		<div class="fd-img-wrapper">
+			<img src="{% static 'CloudFantasy/images/bts/fd/deliver9.png' %}">
 		</div>
 	</div>
 </div>
