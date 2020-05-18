@@ -44,7 +44,7 @@ function update(action) {
 
 function get_image(gallery_id, img_id) {
 	var gallery = "gallery-" + gallery_id;
-	var img = gallery + "-" + img_id + ".png"
+	var img = gallery + "-" + img_id + ".jpg"
 	return "/static/CloudFantasy/images/bts/" + gallery + "/" + img;
 }
 
