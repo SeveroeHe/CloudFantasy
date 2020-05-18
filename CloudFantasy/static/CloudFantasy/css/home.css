@@ -13,6 +13,14 @@
 
 }
 
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
 #main-nav-wrapper{
 	width: 100%;
 	/*background-color: #f1f3f0;*/
