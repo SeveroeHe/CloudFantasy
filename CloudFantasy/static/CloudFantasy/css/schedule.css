@@ -30,7 +30,7 @@
 .day{
 	font-family: ArcherOffice;
 	font-size: 30px;
-	color: #d74129;
+	color: #d84b38;
 	margin-top: -20px;
 }
 .time{
@@ -48,7 +48,7 @@
 	font-weight: 400;
 	font-style: normal;
 	font-size: 16px;
-	color: #d74129;
+	color: #d84b38;
 }
 
 .title-1{
@@ -85,7 +85,7 @@
 	width: 130%;
 }
 .scuedule-red-sm{
-	color: #db6659;
+	color: #d84b38;
 	font-family: din-2014, sans-serif;
 	font-weight: 300;
 	font-style: normal;

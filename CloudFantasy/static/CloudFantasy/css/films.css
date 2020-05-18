@@ -125,7 +125,7 @@
 	font-size: 16px;
 }
 .story-sm-float{
-	color: #db6659;
+	color: #d84b38;
 	font-family: din-2014, sans-serif;
 	font-weight: 300;
 	font-style: normal;
@@ -173,7 +173,7 @@
 	font-weight: 600;
 	font-style: normal;
 	font-size: 16px;
-	color: #db6659;
+	color: #d84b38;
 	padding: 15px 0 0 0;
 }
 .cast-role{
@@ -199,7 +199,7 @@
 /*ppt section*/
 .ppt-row{
 	width: 100%;
-	background-color: #db6659;
+	background-color: #d84b38;
 	min-height: 1200px;
 }
 .ppt-row, .ppt-row>div{

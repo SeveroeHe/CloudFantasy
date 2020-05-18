@@ -39,7 +39,7 @@
 .desc-title{
 	font-family: din-2014, sans-serif;
 	font-size: 16px;
-	color: #d74129;
+	color: #d84b38;
 	padding: 50px 0 20px 0;
 }
 .desc-row{
@@ -86,10 +86,10 @@
 	font-weight: 300;
 }
 .price-left{
-	color: #2d6466;
-	background-color: #d74129;
+	color: #243b44;
+	background-color: #d84b38;
 }
 .price-right{
-	background-color: #2d6466;
-	color: #d74129;
+	background-color: #243b44;
+	color: #d84b38;
 }
