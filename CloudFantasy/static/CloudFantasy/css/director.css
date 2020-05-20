@@ -62,7 +62,9 @@
 .intro-p-r{
 	margin: 30px 0 0 30px;
 }
-
+.intro-italic{
+	font-style: italic;
+}
 
 
 
@@ -239,7 +241,8 @@
 	font-style: italic;
 }
 .sm-bold{
-	font-weight: 500;
+	font-weight: 600;
+	color: #d84b38;
 }
 .right-aw-long{
 	margin: 50px 0 0 10%;
@@ -248,10 +251,12 @@
 	font-weight: 600;
 	font-style: italic;
 	font-size: 30px;
+	line-height: 40px;
 }
 .right-aw-name{
 	margin-left: 10%;	
-	color: #2d6466;
+	margin-top: 15px;	
+	color: #d84b38;
 	font-family: din-2014, sans-serif;
 	font-style: normal;
 	font-weight: 300;

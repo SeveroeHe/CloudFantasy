@@ -1,5 +1,7 @@
 body, html {
 	height: 100%;
+	width: 100%;
+	padding: 0!important;
 	min-width: 1000px;
 }
 #nav-wrapper{
@@ -170,4 +172,9 @@ footer{
 	font-style: normal;
 }
 
-
+.footer-red{
+	background-color: #d84b38;
+}
+.footer-bold{
+	font-weight: 600;
+}

@@ -11,12 +11,15 @@
 
 
 .main-wrapper{
-	margin: 80px 12% 200px 8%;
+	margin: 80px 12% 200px 0;
 	padding: 0 !important;
 	/*position: fixed;*/
 }
 .main-wrapper>div{
 	padding: 10px 0 0 4%;
+}
+.main-wrapper>.col-md-4{
+	padding-left: 12%;
 }
 .fix-col{
 	position: fixed;
@@ -35,7 +38,7 @@
 }
 .time{
 	font-family: din-2014, sans-serif;
-	font-weight: 400;
+	font-weight: 600;
 	font-style: normal;
 	font-size: 16px;
 }
@@ -45,7 +48,7 @@
 }
 .date{
 	font-family: din-2014, sans-serif;
-	font-weight: 400;
+	font-weight: 600;
 	font-style: normal;
 	font-size: 16px;
 	color: #d84b38;
@@ -73,7 +76,7 @@
 }
 .theme{
 	font-family: din-2014, sans-serif;
-	font-weight: 100;
+	font-weight: 300;
 	font-style: normal;
 	font-size: 16px;
 }
@@ -90,6 +93,7 @@
 	font-weight: 300;
 	font-style: normal;
 	padding: 30px 0 0 0;
+	font-size: 14px;
 }
 .theme-italic{
 	font-style: italic;
